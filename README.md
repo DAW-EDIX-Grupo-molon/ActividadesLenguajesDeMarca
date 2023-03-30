@@ -3,13 +3,13 @@
 <p align="center">
 
   
-<h2> 🚀 &nbsp; DAW EDIX -> Prácticas de la asignatura Lenguajes de marcado: </h2>
+<h2> 🚀 &nbsp; Prácticas de la asignatura Lenguajes de marcado: </h2>
 <p align="left">
-  <ul>
-      AE-1. Creación de una página web
-      AE-2. XML, DTD y XSD
-      AE-3. XSLT y XPATH
-  </ul>
+
+      *AE-1. Creación de una página web
+      *AE-2. XML, DTD y XSD
+      *AE-3. XSLT y XPATH
+
   
 <h2> 🚀 &nbsp; Historial de Commits: </h2>
 
