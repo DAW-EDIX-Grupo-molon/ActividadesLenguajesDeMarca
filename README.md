@@ -17,11 +17,6 @@ En concreto las actividades que realizaremos serán las siguientes:
   ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
   ![GitHub Org's stars](https://img.shields.io/github/stars/DAW-EDIX-Grupo-molon/ActividadesLenguajesDeMarca?style=social)
 
-  
-<h2> 🚀 &nbsp; Historial de Commits: </h2>
-
-![Snake animation](https://github.com/DAW-EDIX-Grupo-molon/ActividadesLenguajesDeMarca/blob/output/github-contribution-grid-snake.svg)
-
 
 <h2> 🚀 &nbsp; Tecnologías con las que trabajamos en este repositorio: </h2>
 <p align="left">
