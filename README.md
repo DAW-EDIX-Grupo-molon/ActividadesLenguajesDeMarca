@@ -20,8 +20,6 @@ En concreto las actividades que realizaremos serán las siguientes:
   
 <h2> 🚀 &nbsp; Historial de Commits: </h2>
 
-![Snake animation](https://github.com/thepiyushmalhotra/thepiyushmalhotra/blob/output/github-contribution-grid-snake.svg)
-
 ![Snake animation](https://github.com/DAW-EDIX-Grupo-molon/ActividadesLenguajesDeMarca/blob/output/github-contribution-grid-snake.svg)
 
 
