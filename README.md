@@ -1,11 +1,18 @@
 # ActividadesLenguajesDeMarca "Grupo Molón"
 
 <h2> 🚀 &nbsp; Prácticas de la asignatura Lenguajes de marcado: </h2>
-<p align="left">
 
-     - `AE-1`: Creación de una página web
-     - `AE-2`: XML, DTD y XSD
-     - `AE-3`: XSLT y XPATH
+<p align="left"> En este repositorio estarán recogidas las distintas actividades a entregar en la asignatura de Lenguajes de Marcas y Sistemas de Gestión de Información, correspondientes al primer curso del FP. de DAW de la UNIR (EDIX).
+     Dichas actividades serán realizadas por un grupo de trabajo formado por cuatro autores.
+</p>
+
+<p align="left">
+En concreto las actividades que realizaremos serán las siguientes:
+ </p>
+ 
+ - `AE-1`: Creación de una página web.
+ - `AE-2`: XML, DTD y XSD.
+ - `AE-3`: XSLT y XPATH.
   
   ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
   ![GitHub Org's stars](https://img.shields.io/github/stars/DAW-EDIX-Grupo-molon/ActividadesLenguajesDeMarca?style=social)
