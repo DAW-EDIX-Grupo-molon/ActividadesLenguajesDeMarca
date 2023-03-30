@@ -33,7 +33,7 @@ En concreto las actividades que realizaremos serán las siguientes:
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="github" width="45" height="45"/>
 </p>
 
-## Autores
+## 🚀 Autores
 
 | [<img src="https://avatars.githubusercontent.com/u/86604232?v=4" width=115><br><sub>Cristina</sub>](https://github.com/elogin91) |  [<img src="https://avatars.githubusercontent.com/u/121167533?v=4" width=115><br><sub>Laura</sub>](https://github.com/laurabeltranp) |  [<img src="https://avatars.githubusercontent.com/u/121897889?v=4" width=115><br><sub>Luxmy</sub>](https://github.com/NLArunasalam) | [<img src="https://avatars.githubusercontent.com/u/110383361?v=4" width=115><br><sub>Ivan</sub>](https://github.com/ivansm-GitHub)
 | :---: | :---: | :---: |:---: |
