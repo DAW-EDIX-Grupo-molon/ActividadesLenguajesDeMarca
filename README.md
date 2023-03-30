@@ -1,14 +1,14 @@
-# ActividadesLenguajesDeMarca
-<h2> 🚀 &nbsp; Grupo Molón</h2>
-<p align="center">
+# ActividadesLenguajesDeMarca "Grupo Molón"
 
-  
 <h2> 🚀 &nbsp; Prácticas de la asignatura Lenguajes de marcado: </h2>
 <p align="left">
 
       *AE-1. Creación de una página web
       *AE-2. XML, DTD y XSD
       *AE-3. XSLT y XPATH
+  
+  ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+  ![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
 
   
 <h2> 🚀 &nbsp; Historial de Commits: </h2>
