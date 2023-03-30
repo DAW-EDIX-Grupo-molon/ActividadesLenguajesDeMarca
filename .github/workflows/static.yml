@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './AE-1%20Creación%20de%20una%20página%20web/'
+          path: './AE-1 Creación de una página web/'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
