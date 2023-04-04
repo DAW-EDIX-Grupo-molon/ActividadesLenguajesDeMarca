@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,11 +26,16 @@
 
   <form action="" method="get" name="previusForm">
     <fieldset>
-      <div>
-        <h2>Primero necesitamos saber...</h2>
-        <input type="radio" name="previusForm" value="a"> ¿Eres una empresa que está interesada en nuestra forma de
-        trabajar?<br>
-        <input type="radio" name="previusForm" value="b"> ¿O un programador que quieres formar parte del equipo?
+
+      <h2>Primero necesitamos saber...</h2>
+
+      <div  class="rad-label">
+        <input type="radio" name="previusForm" id="empresa" value="a"> <label for="empresa">¿Eres una empresa interesada en nuestra forma de
+        trabajar?</label>
+      </div>
+
+      <div  class="rad-label">
+        <input type="radio" name="previusForm" id="particular" value="b"> <label for="particular"> ¿O un programador que quieres formar parte del equipo?</label>
       </div>
 
     </fieldset>
@@ -39,38 +43,39 @@
 
   <form action="contactUs.html" method="get" name="enterpreiserForm">
 
-
     <fieldset>
       <h2>Datos de contacto:</h2>
       <div>
-        <label for="nombre">Razón social:</label>
-        <input type="text" name="nombre" size="40" placeholder="Nombre de la empresa"></p>
+        <label for="social">Razón social:</label>
+        <input type="text" name="social" id="social" placeholder="Nombre de la empresa"></p>
       </div>
 
       <div>
         <label for="areaActuacion">Sector de la empresa</label>
-        <input type="text" name="areaActuacion" size="50" placeholder="Tus Apellidos">
+        <input type="text" name="areaActuacion" id="areaActuacion" placeholder="Tus Apellidos">
       </div>
 
       <div>
         <label for="fundacion">Fecha de comienzo de la actividad:</label>
-        <input type="date" name="fundacion" min="1900">
+        <input type="date" name="fundacion" id="fundacion" min="1900">
       </div>
 
       <div>
-        <label for="geografico">Ámbito geográfico:</label><br>
-        <input type="radio" name="geografico" value="n"> Nacional
-        <input type="radio" name="geografico" value="i"> Internacional
+        <legend>Selecciones su ambito de actuación:</legend>
+        <input type="radio" name="geografico" id="nacional" value="n"> Nacional
+        <label for="nacional">Nacional</label>
+        <input type="radio" name="geografico" id="internacional" value="i"> Internacional
+        <label for="internacional">Internacional</label>
       </div>
 
       <div>
         <label for="telefono">Télefono de contacto:</label>
-        <input type="tel" name="telefono" size="9" placeholder="666666666">
+        <input type="tel" name="telefono" id="telefono" size="9" placeholder="666666666">
       </div>
 
       <div>
         <label for="email">Dirección de correo electrónico:</label>
-        <input type="email" name="email" size="50" placeholder="Tu Correo Electrónico"></p>
+        <input type="email" name="email" id="email" placeholder="Tu Correo Electrónico"></p>
       </div>
 
 
@@ -79,7 +84,7 @@
       <h2>Queremos conoceros mejor...</h2>
       <div>
         <label for="web">URL web de la empresa:</label>
-        <input type="url" name="web" size="50" placeholder="www.ejemplo.com"></p>
+        <input type="url" name="web" id="web" placeholder="www.ejemplo.com"></p>
       </div>
 
       <div>
@@ -99,7 +104,7 @@
     <fieldset>
       <div>
         <label for="terminosLegales">¿Acepta los términos legales y el tratamiento de sus datos personales?</label><br>
-        <input type="checkbox" name="terminosLegales">Al marcar esta casilla acepta el tratamiento de sus datos
+        <input type="checkbox" name="terminosLegales" id="terminosLegales">Al marcar esta casilla acepta el tratamiento de sus datos
         personales, por Grupo Molón S.L.
       </div>
 
@@ -109,47 +114,48 @@
         <input type="reset" value="Borrar">
       </div>
     </fieldset>
-
   </form>
-  <form action="contactUs.html" method="get" name="developForm">
 
+  <form action="contactUs.html" method="get" name="developForm">
     <fieldset>
       <h2>Datos de contacto:</h2>
       <div>
         <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" size="40" placeholder="Tu Nombre"></p>
+        <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre"></p>
       </div>
 
       <div>
         <label for="apellidos">Apellidos</label>
-        <input type="text" name="apellidos" size="50" placeholder="Tus Apellidos">
+        <input type="text" name="apellidos" id="apellidos" placeholder="Tus Apellidos">
       </div>
 
       <div>
         <label for="nacimiento">Fecha de Nacimiento</label>
-        <input type="date" name="nacimiento" min="1900">
+        <input type="date" name="nacimiento" id="nacimiento" min="1900">
       </div>
 
       <div>
-        <label for="genero">Elija su género:</label><br>
-        <input type="radio" name="genero" value="h"> Hombre
-        <input type="radio" name="genero" value="m"> Mujer
+        <legend>Seleccione su género:</legend>
+        <input type="radio" name="genero" id="hombre" value="h">
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="genero" id="mujer" value="mujer">
+        <label for="mujer">Mujer</label>
       </div>
 
       <div>
         <label for="telefono">Télefono de contacto:</label>
-        <input type="tel" name="telefono" size="9" placeholder="666666666">
+        <input type="tel" name="telefono" id="telefono" size="9" placeholder="666666666">
       </div>
 
       <div>
         <label for="email">Dirección de correo electrónico:</label>
-        <input type="email" name="email" size="50" placeholder="Tu Correo Electrónico"></p>
+        <input type="email" name="email" id="email"  placeholder="Tu Correo Electrónico"></p>
       </div>
 
       <h2>Queremos conocerte mejor...</h2>
       <div>
         <label for="linkedln">URL perfil de Linkedkn:</label>
-        <input type="url" name="linkedln" size="50" placeholder="Url de tu Perfil de Linkedln"></p>
+        <input type="url" name="linkedln" id="linkedln"  placeholder="Url de tu Perfil de Linkedln"></p>
       </div>
 
       <div>
@@ -163,13 +169,13 @@
 
       <div>
         <label for="observaciones">Cuentenos ¿por qué le interesa trabajar con Un Grupo Molón?</label>
-        <textarea name="observaciones" id="observaciones" cols="50" rows="10"></textarea>
+        <textarea name="observaciones" id="observaciones" rows="5"></textarea>
       </div>
     </fieldset>
     <fieldset>
       <div>
         <label for="terminosLegales">¿Acepta los términos legales y el tratamiento de sus datos personales?</label><br>
-        <input type="checkbox" name="terminosLegales">Al marcar esta casilla acepta el tratamiento de sus datos
+        <input type="checkbox" name="terminosLegales" id="terminosLegales">Al marcar esta casilla acepta el tratamiento de sus datos
         personales, por Grupo Molón S.L.
       </div>
       <div>
