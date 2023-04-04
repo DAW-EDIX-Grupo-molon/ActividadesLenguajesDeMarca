@@ -1,30 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Contacta con nosotros:</h1>
-    <form action="contactUs.html" method="get">
-        <p>Nombre: <input type="text" name="nombre" size="40" placeholder="Tu Nombre"></p>
-        <p>Apellido: <input type="text" name="apellido" size="80" placeholder="Tus Apellidos"></p>
-        <p>Año de nacimiento: <input type="date" name="nacimiento" min="1900"></p>
-        <p>Sexo:
-          <input type="radio" name="hm" value="h"> Hombre
-          <input type="radio" name="hm" value="m"> Mujer
-        </p>
-        <p>Teléfono: <input type="tel" name="telefono" size="9" placeholder="666666666"></p>
-        <p>E-mail: <input type="email" name="email" size="80" placeholder="Tu Correo Electrónico"></p>
-        <p>Linkedln: <input type="url" name="linkedln" size="80" placeholder="Url de tu Perfil de Linkedln"></p>
-        <input type="checkbox" name="terminosLegales">Al marcar esta casilla acepta el tratamiento de sus datos personales, por Grupo Molón S.L.
 
-        <p>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Borrar">
-        </p>
-      </form>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/contactUs.css">
+  <title>ContactUs-Grupo-Molón</title>
+</head>
+
+<body>
+  <header>
+    <h1>Contacta con nosotros:</h1>
+  </header>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="whoWeAre.html">¿Quienes somos?</a></li>
+    <li><a href="actionsAreas.html">Áreas de actuación</a></li>
+    <li><a href="location.html">Localización</a></li>
+    <li><a href="news.html">Noticias</a></li>
+    <li><a href="publications.html">Publicaciones</a></li>
+    <li><a href="contactUs.html">Contacta con nosotros</a></li>
+  </ul>
+</nav>
+
+  <form action="" method="get" name="previusForm">
+    <fieldset>
+      <div>
+        <label for="previusForm">Primero necesitamos saber...</label><br>
+        <input type="radio" name="previusForm" value="a"> ¿Eres una empresa que está interesada en nuestra forma de
+        trabajar?<br>
+        <input type="radio" name="previusForm" value="b"> ¿O un programador que quieres formar parte del equipo?
+      </div>
+
+    </fieldset>
+  </form>
+
+  <form action="contactUs.html" method="get" name="enterpreiserForm">
+
+
+    <fieldset>
+      <h2>Datos de contacto:</h2>
+      <div>
+        <label for="nombre">Razón social:</label>
+        <input type="text" name="nombre" size="40" placeholder="Nombre de la empresa"></p>
+      </div>
+
+      <div>
+        <label for="areaActuacion">Sector de la empresa</label>
+        <input type="text" name="areaActuacion" size="50" placeholder="Tus Apellidos">
+      </div>
+
+      <div>
+        <label for="fundacion">Fecha de comienzo de la actividad:</label>
+        <input type="date" name="fundacion" min="1900">
+      </div>
+
+      <div>
+        <label for="geografico">Ámbito geográfico:</label>
+        <input type="radio" name="geografico" value="n"> Nacional
+        <input type="radio" name="geografico" value="i"> Internacional
+      </div>
+
+      <div>
+        <label for="telefono">Télefono de contacto:</label>
+        <input type="tel" name="telefono" size="9" placeholder="666666666">
+      </div>
+
+      <div>
+        <label for="email">Dirección de correo electrónico:</label>
+        <input type="email" name="email" size="50" placeholder="Tu Correo Electrónico"></p>
+      </div>
+
+
+
+
+      <h2>Queremos conoceros mejor...</h2>
+      <div>
+        <label for="web">URL web de la empresa:</label>
+        <input type="url" name="web" size="50" placeholder="www.ejemplo.com"></p>
+      </div>
+
+      <div>
+        <label for="intereses">¿Qué área de trabajo le interesa?</label>
+        <select name="intereses" id="intereses">
+          <option value="1">Desarrollo WEB</option>
+          <option value="2">SEO</option>
+          <option value="3">Aplicaciones de gestión</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="observaciones">Cuentenos un poco más sobre la filosofía de su empresa:</label>
+        <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <label for="terminosLegales">¿Acepta los términos legales y el tratamiento de sus datos personales?</label><br>
+        <input type="checkbox" name="terminosLegales">Al marcar esta casilla acepta el tratamiento de sus datos
+        personales, por Grupo Molón S.L.
+      </div>
+
+      </div>
+      <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+      </div>
+    </fieldset>
+
+  </form>
+  <form action="contactUs.html" method="get" name="developForm">
+
+    <fieldset>
+      <h2>Datos de contacto:</h2>
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" size="40" placeholder="Tu Nombre"></p>
+      </div>
+
+      <div>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" size="50" placeholder="Tus Apellidos">
+      </div>
+
+      <div>
+        <label for="nacimiento">Fecha de Nacimiento</label>
+        <input type="date" name="nacimiento" min="1900">
+      </div>
+
+      <div>
+        <label for="genero">Elija su género:</label>
+        <input type="radio" name="genero" value="h"> Hombre
+        <input type="radio" name="genero" value="m"> Mujer
+      </div>
+
+      <div>
+        <label for="telefono">Télefono de contacto:</label>
+        <input type="tel" name="telefono" size="9" placeholder="666666666">
+      </div>
+
+      <div>
+        <label for="email">Dirección de correo electrónico:</label>
+        <input type="email" name="email" size="50" placeholder="Tu Correo Electrónico"></p>
+      </div>
+    </fieldset>
+    <fieldset>
+      <h2>Queremos conocerte mejor...</h2>
+      <div>
+        <label for="linkedln">URL perfil de Linkedkn:</label>
+        <input type="url" name="linkedln" size="50" placeholder="Url de tu Perfil de Linkedln"></p>
+      </div>
+
+      <div>
+        <label for="intereses">¿Qué área de trabajo le interesa?</label>
+        <select name="intereses" id="intereses">
+          <option value="1">Back-End</option>
+          <option value="2">Front-End</option>
+          <option value="3">Full-Stack</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="observaciones">Cuentenos ¿por qué le interesa trabajar con Un Grupo Molón?</label>
+        <textarea name="observaciones" id="observaciones" cols="50" rows="10"></textarea>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div>
+        <label for="terminosLegales">¿Acepta los términos legales y el tratamiento de sus datos personales?</label><br>
+        <input type="checkbox" name="terminosLegales">Al marcar esta casilla acepta el tratamiento de sus datos
+        personales, por Grupo Molón S.L.
+      </div>
+    </fieldset>
+
+    <div>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+    </div>
+
+
+  </form>
 </body>
+
 </html>
