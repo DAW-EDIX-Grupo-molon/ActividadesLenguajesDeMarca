@@ -1,11 +1,25 @@
 body {
     font-family: "Lato", sans-serif;
     background: #837475;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
+
+header {
+    background-image: url(../assets/img/Background-Header-1.jpg);
+    height: 80px;
+    margin: 0px;
+    padding: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+
 ul {
 
     list-style-type: none;
@@ -13,22 +27,15 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: sticky;
-    top: 0;
-    left:  0;
     width: 100%;
-    text-align: center;
 }
 
 li {
     float: left;
-
 }
-
 li a {
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
