@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/contactUs.css">
+
   <title>ContactUs-Grupo-Molón</title>
 </head>
 
@@ -27,25 +28,40 @@
       </ul>
     </nav>
 
+    <script type="text/javascript">
+      function seleccionandoFormulario(a) {
+        if (a == 1) {
+          document.getElementById("enterpreiserForm").style.display = "block";
+          document.getElementById("developForm").style.display = "none";
+        }
+        else if (a == 2) {
+          document.getElementById("developForm").style.display = "block";
+          document.getElementById("enterpreiserForm").style.display = "none";
+        }
+      }
+    </script>
+    
     <div class="formularios">
       <form action="" method="get" name="previusForm">
         <fieldset>
           <h2>Primero necesitamos saber...</h2>
 
           <div class="rad-label">
-            <input type="radio" name="previusForm" id="empresa" value="a"> <label for="empresa">¿Eres una empresa
+            <input type="radio" name="previusForm" id="empresa" value="a"
+              onchange="javascript:seleccionandoFormulario(1);"> <label for="empresa">¿Eres una empresa
               interesada en nuestra forma de
               trabajar?</label>
           </div>
 
           <div class="rad-label">
-            <input type="radio" name="previusForm" id="particular" value="b"> <label for="particular"> ¿O un programador
+            <input type="radio" name="previusForm" id="particular" value="b"
+              onchange="javascript:seleccionandoFormulario(2);"> <label for="particular"> ¿O un programador
               que quieres formar parte del equipo?</label>
           </div>
         </fieldset>
       </form>
 
-      <form action="contactUs.html" method="get" name="enterpreiserForm">
+      <form action="contactUs.html" method="get" name="enterpreiserForm" id="enterpreiserForm" style="display: none;">
         <fieldset>
           <h2>Datos de contacto:</h2>
 
@@ -124,7 +140,7 @@
         </fieldset>
       </form>
 
-      <form action="contactUs.html" method="get" name="developForm">
+      <form action="contactUs.html" method="get" name="developForm" id="developForm" style="display: none;">
         <fieldset>
           <h2>Datos de contacto:</h2>
 
