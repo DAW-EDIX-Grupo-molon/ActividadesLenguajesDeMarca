@@ -1,13 +1,23 @@
-
 body {
     font-family: "Lato", sans-serif;
-    background: #837475;
+    background: rgb(190, 171, 169);
+    background: radial-gradient(circle, rgba(190, 171, 169, 1) 2%, rgba(131, 116, 117, 1) 49%, rgba(96, 84, 83, 1) 100%);
     color: white;
     margin: 0;
     padding: 0;
     text-align: center;
+
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 8.5rem;
+    /* Footer height */
+}
 
 header {
     background-image: url(../assets/img/Background-Header-1.jpg);
@@ -16,7 +26,7 @@ header {
     padding: 10px;
 }
 
-.formularios{
+.formularios {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -27,10 +37,14 @@ form {
     max-width: 610px;
 }
 
+.formulario-recibido {
+    background-image: url();
+}
+
 fieldset {
     border-radius: 10px;
     margin: 10px;
-    border: 6px solid rgb(17, 14, 187);
+    border: 6px linear-gradient(90deg, rgba(17, 14, 187, 1) 2%, rgba(99, 120, 216, 0.5215336134453781) 100%);
     background: #6378d8;
     margin-bottom: 20px;
     z-index: 10;
@@ -40,6 +54,7 @@ fieldset {
 ::placeholder {
     color: #5b6bb3;
 }
+
 .form-item {
     width: 90%;
     padding: 8px;
@@ -84,6 +99,7 @@ input[type=reset]:hover {
 nav {
     position: sticky;
     top: 0px;
+
 }
 
 ul {
@@ -97,8 +113,10 @@ ul {
 }
 
 li {
+    margin: 10px;
     float: left;
 }
+
 li a {
     display: block;
     color: white;
@@ -114,11 +132,11 @@ li a:hover {
     display: flex;
     align-items: center;
     text-align: center;
-  
+
     border-radius: 50px;
     padding: 14px 16px;
     margin: 10px 0;
-  
+
     cursor: pointer;
     transition: .3s;
 }
@@ -129,5 +147,24 @@ li a:hover {
 
 .rad-label:hover,
 .rad-label:focus-within {
-  background: hsla(0, 0%, 80%, .14);
+    background: hsla(0, 0%, 80%, .14);
+}
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8.5rem;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+@media screen and (max-width:800px) {
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 35px, 0px;
+    }
 }
