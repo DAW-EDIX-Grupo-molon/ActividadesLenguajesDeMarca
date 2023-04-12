@@ -1,0 +1,101 @@
+body {
+    font-family: "Lato", sans-serif;
+    background: white;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+header {
+    background-image: url(../assets/img/Background-Header-1.jpg);
+    height: 80px;
+    margin: 0px;
+    padding: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+h5{
+    text-align: justify;
+    border-width: 20rem;
+    color: #111;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+p, #cookies{
+    color: #111;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin-right: 100px;
+    font-size: 15px;
+    margin-left: 100px;
+}
+.info{
+    text-align: justify;
+   color: #111;
+   line-height: 1.5rem;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: 15px;
+}
+
+
+#datos, #gestion, #facilitar, #derechos{
+    text-align: justify;
+    color: #111;
+    line-height: 1.5rem;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: 15px;
+    background-color: white !Important;
+}
+#masinfo{
+    text-align: justify;
+    color: #111;
+    line-height: 1.5rem;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: 15px;
+    background-color: white !Important;
+}
+
+#cookies{
+    text-align: justify;
+    color: #111;
+    line-height: 1.5rem;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: 15px;
+    background-color: white !Important;
+}
