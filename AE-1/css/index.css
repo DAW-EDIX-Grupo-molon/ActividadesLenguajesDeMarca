@@ -1,0 +1,371 @@
+/*IMPORTS - Aquí están linkeadas las fuentes que utilizaré para el diseño de la web*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@500;700&display=swap');
+/*END IMPORTS*/
+
+/*Root -> Creación de veriables de CSS para un control de ajustes en los que voy a registrar diferentes características que va a tener la web*/
+:root {
+
+	/*COLORES*/
+	--color-pr-cl: rgba(221, 221, 221, 1);
+	--color-pr-cl-25: rgba(42, 62, 92, 0.2);
+	--color-pr-os: rgba(13, 17, 23, 1);
+	--color-gris: rgb(161, 161, 161);
+	--color-sec: rgba(69, 78, 255, 1.0);
+
+	/*FUENTES*/
+	--font-esp: "montserrat", sans-serif;
+	--font-txt: "lato", sans-serif;
+
+	--mon-regular: 500;
+	--mon-bold: 700;
+	--lato-regular: 300;
+	--lato-bold: 400;
+
+	/*TAMAÑOS FUENTES*/
+	--tamaño-esp: 5rem;
+	--tamaño-txt: 1rem;
+
+	/*ESPACIOS*/
+	--esp-slargo: 80px;
+	--esp-xlargo: 60px;
+	--esp-largo: 35px;
+	--esp-medio: 25px;
+	--esp-corto: 10px;
+	--esp-xcorto: 5px;
+
+}/*END - ROOT*/
+/*
+Mediante la utilización de estos sufijos, me aseguraré de que todos los elementos que añada, se visualizarán en los diferentes navegadores y sus respectivas versiones.
+
+-webkit-
+-moz-
+-o-
+*/
+
+/*Aquí designaré las clases más genericas, con el objetivo de que sean reutilizables*/
+
+.m-top-1 {
+	margin-top: var(--esp-xcorto);
+}
+
+.m-top-2 {
+	margin-top: var(--esp-corto);
+}
+
+.m-top-3 {
+	margin-top: var(--esp-medio);
+}
+
+.m-top-4 {
+	margin-top: var(--esp-largo);
+}
+
+.m-top-5 {
+	margin-top: var(--esp-xlargo);
+}
+
+.m-top-6 {
+	margin-top: 100px;
+}
+
+.m-bottom-1 {
+	margin-bottom: var(--esp-xcorto);
+}
+
+.m-bottom-2 {
+	margin-bottom: var(--esp-corto);
+}
+
+.m-bottom-3 {
+	margin-bottom: var(--esp-medio);
+}
+
+.m-bottom-4 {
+	margin-bottom: var(--esp-largo);
+}
+
+.m-bottom-5 {
+	margin-bottom: var(--esp-xlargo);
+}
+
+.p-top-1 {
+	padding-top: var(--esp-xcorto);
+}
+
+.p-top-2 {
+	padding-top: var(--esp-corto);
+}
+
+.p-top-3 {
+	padding-top: var(--esp-medio);
+}
+
+.p-top-4 {
+	padding-top: var(--esp-largo);
+}
+
+.p-top-5 {
+	padding-top: var(--esp-xlargo);
+}
+
+.p-top-6 {
+	padding-top: 125px;
+}
+
+.p-bottom-1 {
+	padding-bottom: var(--esp-xcorto);
+}
+
+.p-bottom-2 {
+	padding-bottom: var(--esp-corto);
+}
+
+.p-bottom-3 {
+	padding-bottom: var(--esp-medio);
+}
+
+.p-bottom-4 {
+	padding-bottom: var(--esp-largo);
+}
+
+.p-bottom-5 {
+	padding-bottom: var(--esp-xlargo);
+}
+
+.p-bottom-6 {
+	padding-bottom: 125px;
+}
+
+.fullContainer {
+	width: 100%;
+}
+
+.centrar-contenedor {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-float-left {
+    float: left;
+}
+
+.d-float-right {
+    float: right;
+}
+
+.d-float-top {
+    float: top;
+}
+
+.d-float-bottom {
+    float: bottom;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-direcction-column {
+    flex-direction: column;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-align-intems {
+    align-items: center;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-cuerpo {
+    font-family: var(--font-txt);
+    font-weight: var(--lato-regular);
+    font-size: 1rem;
+    color: var(--color-pr-os);
+    text-align: justify;
+}
+
+.txt-cuerpo-white {
+    font-family: var(--font-txt);
+    font-weight: var(--lato-regular);
+    font-size: 1rem;
+    color: var(--color-pr-cl);
+    text-align: justify;
+}
+
+.txt-titular {
+	font-family: var(--font-esp);
+	font-weight: var(--mon-regular);
+	font-size: 3rem;
+	color: var(--color-pr-os);
+}
+
+.txt-especial {
+	font-family: var(--font-esp);
+	font-weight: var(--mont-bold);
+	font-size: 1rem;
+}
+
+/*En esta zona centraré todas las clases más especificas*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	-webkit-scroll-behavior: smooth;
+	-moz-scroll-behavior: smooth;
+	-o-scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-pr-os);
+}
+
+/*==================NAV==================*/
+.cabecera{
+	background-color: var(--color-pr-cl-75);
+    
+	justify-content: space-between;
+	height: var(--esp-xlargo);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#cabecera{
+	background-color: rgba(19, 26, 37, 1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.35);
+    padding-top: 10px;
+    padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	z-index: 100;
+}
+
+.maxContainer {
+	width: 90vw;
+}
+
+.logo {
+	width: 30vw;
+    max-width: 165px;
+    min-width: 165px;
+	position: fixed;
+    left: 20px;
+	top: 16px;
+}
+
+.toggle {
+	font-size: 1.5rem;
+	background-color: transparent;
+	border: 1px solid var(--color-sec);
+    padding: 10px 15px;
+	color: var(--color-pr-os);
+	cursor: pointer;
+	position: fixed;
+	right: var(--esp-medio);
+	top: 18px;
+}
+
+.menuContainer ul {
+	list-style: none;
+	background-color: rgba(19, 26, 37, 1);
+    backdrop-filter: blur(10px);
+
+	display: none;
+	flex-direction: column;
+	gap: 80px;
+	position: fixed;
+	top: 80px;
+	left: 0%;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+
+	transition: .5s;
+    z-index: 110;
+}
+
+.menuVisible {
+    
+	opacity: 100%!important;
+	display: flex!important;
+}
+
+.menuContainer ul li a {
+	color: var(--color-gris);
+	text-decoration: none;
+}
+
+.menuContainer ul li a:hover , .menuContainer ul li a:active {
+	color: var(--color-sec);
+	transition: .5s;
+
+}
+
+
+/*==================MAIN==================*/
+
+main {
+    padding-top: 80px;
+}
+
+/*Banner*/
+.gridBody{
+	height:50vh;
+	display: grid;
+}
+
+.fullScreen {
+	position: absolute;
+	z-index: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 49.99%;
+	transform: translate(-50%, -50%);
+}
+
+.contenedorFullScreen {
+	position: relative;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*==================MEDIA 992==================*/
+@media screen and (min-width: 992px){
+
+
+
+}/*END 992px*/
