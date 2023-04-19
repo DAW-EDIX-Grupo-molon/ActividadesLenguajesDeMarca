@@ -109,7 +109,7 @@ Mediante la utilización de estos sufijos, me aseguraré de que todos los elemen
 }
 
 .p-top-6 {
-	padding-top: 125px;
+	padding-top: 100px;
 }
 
 .p-bottom-1 {
@@ -133,11 +133,27 @@ Mediante la utilización de estos sufijos, me aseguraré de que todos los elemen
 }
 
 .p-bottom-6 {
-	padding-bottom: 125px;
+	padding-bottom: 100px;
+}
+
+.bg-blanco {
+	background-color: var(--color-pr-cl);
+}
+
+.bg-oscuro {
+	background-color: var(--color-pr-os);
+}
+
+.bg-gris {
+	background-color: var(--color-gris);
 }
 
 .fullContainer {
 	width: 100%;
+}
+
+.cajaResponsive {
+	width: 90%;
 }
 
 .centrar-contenedor {
@@ -209,9 +225,10 @@ Mediante la utilización de estos sufijos, me aseguraré de que todos los elemen
 }
 
 .txt-especial {
-	font-family: var(--font-esp);
-	font-weight: var(--mont-bold);
-	font-size: 1rem;
+	font-family: var(--font-txt);
+	font-weight: bold;
+	font-size: 1.25rem;
+	color: var(--color-sec);
 }
 
 /*En esta zona centraré todas las clases más especificas*/
@@ -250,7 +267,6 @@ body {
 
 #cabecera{
 	background-color: rgba(19, 26, 37, 1);
-    backdrop-filter: blur(10px);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.35);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -283,6 +299,7 @@ body {
 	font-size: 1.5rem;
 	background-color: transparent;
 	border: 1px solid var(--color-sec);
+	border-radius: 5px;
     padding: 10px 15px;
 	color: var(--color-pr-os);
 	cursor: pointer;
@@ -294,16 +311,15 @@ body {
 .menuContainer ul {
 	list-style: none;
 	background-color: rgba(19, 26, 37, 1);
-    backdrop-filter: blur(10px);
 
 	display: none;
 	flex-direction: column;
-	gap: 80px;
+	gap: 60px;
 	position: fixed;
 	top: 80px;
 	left: 0%;
 	width: 100vw;
-	height: 100vh;
+	height: calc(100vh - 80px);
 	justify-content: center;
 	align-items: center;
 	opacity: 0;
@@ -319,7 +335,7 @@ body {
 }
 
 .menuContainer ul li a {
-	color: var(--color-gris);
+	color: var(--color-pr-cl);
 	text-decoration: none;
 }
 
@@ -337,6 +353,19 @@ main {
 }
 
 /*Banner*/
+.tituloBanner {
+	font-family: 'lato';
+	font-weight: bold;
+	z-index: 1;
+	color: var(--color-pr-cl);
+	font-size: 2rem;
+	text-align: center;
+	position: relative;
+	top: 42%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .gridBody{
 	height:50vh;
 	display: grid;
@@ -363,9 +392,143 @@ main {
 	margin: 0 auto;
 }
 
+/*Iconos*/
+
+.section-icon {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.icono-container{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-pr-cl);
+	border-radius: 5px;
+	border: 1px solid var(--color-sec);
+	box-shadow: 0 0 15px rgba(69, 78, 255, .5);
+}
+
+.icono-img{
+	font-size: 1.5em;
+	padding: 30px;
+}
+
+.icono-txt{
+	text-align: center;
+	padding: 30px;
+	border-top:1px solid var(--color-sec);
+}
+
+/*==================MEDIA 650==================*/
+@media screen and (min-width: 650px) {
+	.section-icon {
+		width: 80%;
+	}
+
+	.icono-container{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.icono-txt{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
+		padding: 30px;
+		border-top:none;
+		border-left: 1px solid var(--color-sec);
+	}
+
+}/*END 650px*/
+
 /*==================MEDIA 992==================*/
 @media screen and (min-width: 992px){
 
+	#cabecera {
+		background-color: rgba(21, 33, 52, 0.5);
+		backdrop-filter: blur(10px);
+	}
 
+	.maxContainer {
+		width: 90%;
+		height: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		max-width: inherit;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		position: none;
+	}
+
+	.logo {
+		position: inherit;
+		left: inherit;
+		top: inherit;
+	}
+
+	.toggle{
+		display: none;
+	}
+
+	.menuContainer ul {
+		background-color: transparent;
+		display: flex;
+		flex-direction: row;
+		gap: var(--esp-largo);
+		position: inherit;
+		top: initial;
+		left: inherit;
+		right: initial;
+		width: auto;
+		height: auto;
+		justify-content: inherit;
+		align-items: center;
+		opacity: 100%;
+		transition: 0s;
+		-webkit-transition: 0s;
+	}
+
+	.section-icon {
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.icono-container{
+		flex-direction: column;
+		width: 30%;
+	}
+
+	.icono-txt{
+		border-top:1px solid var(--color-sec);
+		border-left: none;
+	}
 
 }/*END 992px*/
+
+/*==================MEDIA 1200==================*/
+@media screen and (min-width: 1200px) {
+
+	.cajaResponsive {
+		width: 1200;
+	}
+
+	.maxContainer {
+		max-width: 1200px;
+	}
+
+	.section-icon {
+		width: 1000px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}/*END 1200px*/
