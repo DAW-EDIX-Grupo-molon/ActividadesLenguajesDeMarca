@@ -1,27 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrupoMolón.com</title>
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <!-- icono -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/grupoMolon.ico">
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
 </head>
-<body>
-    <header>
-        <h1>HOME</h1>
-      </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="whoWeAre.html">¿Quienes somos?</a></li>
-        <li><a href="actionsAreas.html">Áreas de actuación</a></li>
-        <li><a href="location.html">Localización</a></li>
-        <li><a href="news.html">Noticias</a></li>
-        <li><a href="publications.html">Publicaciones</a></li>
-        <li><a href="contactUs.html">Contacta con nosotros</a></li>
-      </ul>
-    </nav>
-    
+<body class="bg-oscuro">
+  <div class="">
+    <!-- Cabecera -->
+    <header id="cabecera">
+      <!-- LOGO -->
+      <div class="maxContainer">
+        <div class="logo">
+          <a href="#top">
+            <img  class="fullContainer" src="./assets/icons/logo-grupo-molon.png" alt="Logo GrupoMolón.com">
+          </a>
+        </div>
+        <!-- BOTÓN -->
+        <button class="toggle">
+          <span class="">
+            <p class="txt-cuerpo-white">Menú</p>
+          </span>
+        </button>
+        <!-- NAVEGADOR -->
+        <nav class="txt-cuerpo menuContainer flexContainer" id="menu">
+          <ul id="nav" class="">
+            <li><a href="news.html">Noticias</a></li>
+            <li><a href="whoWeAre.html">Quienes somos</a></li>
+            <li><a href="publications.html">Publicaciones</a></li>
+            <li><a href="actionAreas.html">Areas de actuación</a></li>
+            <li><a href="location.html">Localización</a></li>
+            <li><a href="contactUs.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Main -->
+    <main id="top" class="">
+
+      <!-- Banner principal -->
+      <!-- BANNER -->
+      <article id="banner" class="gridBody">
+        <div class="contenedorFullScreen">
+          <div class="tituloBanner">
+            <span>AE-1. Creación de una página web</span>
+          </div>
+          <picture class="">
+            <source media="(min-width:750px)" srcset="./assets/img/banner-desktop.jpg">
+            <img src="./assets/img/banner-other.jpg" alt="Banner home" class="fullScreen" title="Banner home">
+          </picture>
+        </div>
+      </article>
+
+      <!-- Sección de iconos -->
+      <section class="bg-blanco p-top-6 p-bottom-6 m-top-2">
+        <div class="section-icon centrar-contenedor">
+          <!-- icono 1 -->
+          <div class="icono-container">
+            <div class="icono-img">
+              <img src="./assets/icons/icon-1.svg" alt="icono de trabajo" class="fullContainer">
+            </div>
+            <div class="icono-txt">
+              <span>
+                <p class="txt-especial">Buena presentación</p>
+              </span>
+            </div>
+          </div>
+          <!-- icono 2 -->
+          <div class="icono-container">
+            <div class="icono-img">
+              <img src="./assets/icons/icon-2.svg" alt="icono de trabajo" class="fullContainer">
+            </div>
+            <div class="icono-txt">
+              <span>
+                <p class="txt-especial">Proyectos de alta calidad</p>
+              </span>
+            </div>
+          </div>
+          <!-- icono 3 -->
+          <div class="icono-container">
+            <div class="icono-img">
+              <img src="./assets/icons/icon-3.svg" alt="icono de trabajo" class="fullContainer">
+            </div>
+            <div class="icono-txt">
+              <span>
+                <p class="txt-especial">Gran coordinación</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- noticias -->
+      <section class="cajaResponsive centrar-contenedor p-top-6 p-bottom-6">
+        <div class="m-bottom-4">
+          <span>
+            <p class="txt-titular-w">¿Qué se cuenta el GrupoMolón?</p>
+          </span>
+        </div>
+        
+        <article class="noticia-container">
+          <div class="noticia-img">
+            <img src="./assets/img/noticia-01.png" alt="imagen noticia 1" class="">
+          </div>
+          <div class="noticia-txt">
+            <span>
+              <p class="txt-especial-w">Titular noticia 1</p>
+              <p class="txt-cuerpo-white m-top-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione magni maxime rerum minus cupiditate suscipit veniam, nobis sapiente nulla fuga dolor repellat, velit recusandae deserunt eum maiores odio iure quasi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione magni maxime rerum minus cupiditate suscipit veniam, nobis sapiente nulla fuga Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione magni maxime rerum minus cupiditate suscipit veniam, nobis sapiente nulla fuga</p>
+            </span>
+          </div>
+        </article>
+        <div class="separador">
+          <div></div>
+        </div>
+        <article class="noticia-container-r">
+          <div class="noticia-img">
+            <img src="./assets/img/noticia-02.png" alt="imagen noticia 1" class="">
+          </div>
+          <div class="noticia-txt">
+            <span>
+              <p class="txt-especial-w">Titular noticia 2</p>
+              <p class="txt-cuerpo-white m-top-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione magni maxime rerum minus cupiditate suscipit veniam, nobis sapiente nulla fuga dolor repellat, velit recusandae deserunt eum maiores odio iure quasi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione magni maxime rerum minus cupiditate suscipit veniam, nobis sapiente nulla fuga</p>
+            </span>
+          </div>
+        </article>
+        <div class="separador">
+          <div></div>
+        </div>
+        <article class="noticia-container">
+          <div class="noticia-img">
+            <img src="./assets/img/noticia-03.png" alt="imagen noticia 1" class="">
+          </div>
+          <div class="noticia-txt">
+            <span>
+              <p class="txt-especial-w">Titular noticia 3</p>
+              <p class="txt-cuerpo-white m-top-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione magni maxime rerum minus cupiditate suscipit veniam, nobis sapiente nulla fuga dolor repellat, velit recusandae deserunt eum maiores odio iure quasi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione magni maxime rerum minus cupiditate suscipit veniam, nobis sapiente nulla fuga Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione magni maxime rerum minus cupiditate suscipit veniam, nobis sapiente nulla fuga</p>
+            </span>
+          </div>
+        </article>      
+      </section>
+    </main>
+    <!-- Aside -->
+    <aside>
+      <!-- Formulario -->
+      <div class="container">
+        <button id="boton" class="btn txt-cuerpo-white"><a href="#formulario">Suscribirme</a></button>
+        <div id="formulario" class="form-container">
+          <a href="#" class="close"></a>
+          <form class="txt-cuerpo-bold-white">
+            <span class="txt-especial-w">¡Quiero suscribirme!</span><br><br>
+            <label for="nombre">Nombre:</label><br>
+            <input id="nombre" type="text" name="nombre" placeholder="Félix"/><br><br>
+            <label for="nombre">Correo:</label><br>
+            <input id="nombre" type="text" name="nombre" placeholder="ejemplo@grupomolon.com"/><br><br>
+            <label for="terminos">¿Acepta los terminos de uso? </label>
+            <br/>	
+            <p class="p-top-1"><input id="terminos" type="checkbox" name="terminos" value="Y" /> He leido y acepto los terminos de uso</p><br>
+            <input id="enviar" type="submit" value="¡Enviar!" />
+          </form>
+        </div>
+      </div>
+    <!-- Footer -->
+    <footer class="">
+      <div class="bg-negro p-top-6">
+        <div class="cajaResponsive centrar-contenedor footer-container p-bottom-6">
+          <div class="d-flex flex-direcction-column gap-25">
+            <span class="txt-cuerpo-bold-white">Nosotros</span>
+            <span class="txt-cuerpo-white-izq">Quienes somos</span>
+            <span class="txt-cuerpo-white-izq">Áreas de actuación</span>
+            <span class="txt-cuerpo-white-izq">Contacto</span>
+          </div>
+          <div class="d-flex flex-direcction-column gap-25">
+            <span class="txt-cuerpo-bold-white">GrupoMolón.com</span>
+            <span class="txt-cuerpo-white-izq">Noticias</span>
+            <span class="txt-cuerpo-white-izq">Publicaciones</span>
+            <span class="txt-cuerpo-white-izq">Localización</span>
+          </div>
+          <div class="d-flex flex-direcction-column gap-25">
+            <span class="txt-cuerpo-bold-white">Politicas</span>
+            <span class="txt-cuerpo-white-izq">Coockies</span>
+            <span class="txt-cuerpo-white-izq">Privacidad</span>
+          </div>
+        </div>
+        <div class="centrar-contenedor p-top-2 p-bottom-2 bg-blanco">
+          <div class="d-flex flex-direcction-row flex-justify-center gap-25">
+            <img src="./assets/icons/instagram-icon.svg" alt="icono instagram">
+            <img src="./assets/icons/whatsapp-icon.svg" alt="icono instagram">
+            <img src="./assets/icons/twitter-icon.svg" alt="icono instagram">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- JAVASCRIPT -->
+	<script src="./js/index.js"></script>
+  <!-- JAVASCRIPT -->
 </body>
 </html>
