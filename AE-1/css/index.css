@@ -6,11 +6,12 @@
 :root {
 
 	/*COLORES*/
-	--color-pr-cl: rgba(221, 221, 221, 1);
+	--color-pr-cl: rgba(255, 255, 255, 1);
 	--color-pr-cl-25: rgba(42, 62, 92, 0.2);
 	--color-pr-os: rgba(13, 17, 23, 1);
 	--color-gris: rgb(161, 161, 161);
 	--color-sec: rgba(69, 78, 255, 1.0);
+	--color-negro: rgba(28, 28, 28, 1.0);
 
 	/*FUENTES*/
 	--font-esp: "montserrat", sans-serif;
@@ -144,6 +145,10 @@ Mediante la utilización de estos sufijos, me aseguraré de que todos los elemen
 	background-color: var(--color-pr-os);
 }
 
+.bg-negro {
+	background-color: var(--color-negro);
+}
+
 .bg-gris {
 	background-color: var(--color-gris);
 }
@@ -185,6 +190,14 @@ Mediante la utilización de estos sufijos, me aseguraré de que todos los elemen
     flex-direction: column;
 }
 
+.flex-direcction-row {
+    flex-direction: row;
+}
+
+.gap-25{
+	gap: 25px;
+}
+
 .flex-justify-center {
     justify-content: center;
 }
@@ -217,6 +230,20 @@ Mediante la utilización de estos sufijos, me aseguraré de que todos los elemen
     text-align: justify;
 }
 
+.txt-cuerpo-white-izq {
+    font-family: var(--font-txt);
+    font-weight: var(--lato-regular);
+    font-size: 1rem;
+    color: var(--color-pr-cl);
+}
+
+.txt-cuerpo-bold-white {
+    font-family: var(--font-txt);
+    font-weight: var(--lato-bold);
+    font-size: 1rem;
+    color: var(--color-pr-cl);
+}
+
 .txt-titular {
 	font-family: var(--font-esp);
 	font-weight: var(--mon-regular);
@@ -224,11 +251,39 @@ Mediante la utilización de estos sufijos, me aseguraré de que todos los elemen
 	color: var(--color-pr-os);
 }
 
+.txt-titular-w {
+	font-family: var(--font-esp);
+	font-weight: var(--mon-regular);
+	font-size: 2rem;
+	color: var(--color-pr-cl);
+}
+
 .txt-especial {
 	font-family: var(--font-txt);
 	font-weight: bold;
 	font-size: 1.25rem;
 	color: var(--color-sec);
+}
+
+.txt-especial-w {
+	font-family: var(--font-txt);
+	font-weight: bold;
+	font-size: 1.25rem;
+	color: var(--color-pr-cl);
+}
+
+.separador {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.separador>div {
+	border-top: 1px solid var(--color-sec);
+	box-shadow: 0 0 15px rgba(69, 78, 255, .5);
+}
+
+.sombra {
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.35);
 }
 
 /*En esta zona centraré todas las clases más especificas*/
@@ -404,6 +459,7 @@ main {
 .icono-container{
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 	background-color: var(--color-pr-cl);
 	border-radius: 5px;
 	border: 1px solid var(--color-sec);
@@ -421,26 +477,206 @@ main {
 	border-top:1px solid var(--color-sec);
 }
 
+/*Noticias*/
+
+.noticia-img{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.noticia-img>img{
+	width: 75%;
+}
+
+.noticia-txt{
+	width: 100%;
+	padding: 30px 0px;
+	justify-content: center;
+	align-items: center;
+}
+
+.noticia-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.noticia-container-r {
+	display: flex;
+	flex-direction: column;
+}
+
+/*==================Aside==================*/
+.container {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	transition: all 0.3s ease;
+  }
+  
+  .btn {
+	background-color: rgba(21, 33, 52, 0.5);
+	backdrop-filter: blur(10px);
+	border: 1px solid var(--color-sec);
+	padding: 10px 20px;
+	border-radius: 5px 0 0 5px;
+	cursor: pointer;
+  }
+
+  .btn a{
+	text-decoration: none;
+	color: #fff;
+  }
+  
+  .form-container {
+	position: absolute;
+	top: 0;
+	right: -100vw;
+	width: 70vw;
+	background-color: rgba(21, 33, 52, 0.5);
+	backdrop-filter: blur(10px);
+	border: 1px solid var(--color-sec);
+	border-radius: 5px;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.35);
+	transition: all 0.3s ease;
+	z-index: 2;
+	transform: translateY(-50%);
+  }
+  
+  .form-container form {
+	padding: 20px;
+  }
+  
+  .container:hover {
+	right: 0;
+	box-shadow: 0px 0px 10px rgba(69, 78, 255, .5);
+  }
+
+  .form-container:target {
+	right: 0;
+  }
+
+  .form-container .close {
+	position: relative;
+	display: block;
+  }
+  
+  .form-container .close::after {
+	left: -1rem;
+	top: -1rem;
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	display: flex;
+	z-index: 1;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-sec);
+	border-radius: 50%;
+	color: white;
+	content: "×";
+	cursor: pointer;
+  }
+
+  input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--color-sec);
+	border-left: 1px solid var(--color-sec);
+	padding: 5px;
+	margin-top: 5px;
+	color: var(--color-sec);
+	width: 100%;
+	font-size: 1rem;
+  }
+
+  input::placeholder{
+	font-family: var(--font-txt);
+	color: #c7c7c7;
+  }
+
+  #terminos{
+	width: auto;
+  }
+
+  #enviar {
+	font-family: var(--font-txt);
+	background-color: var(--color-sec);
+	border-radius: 5px;
+	padding: 10px 25px;
+	color: var(--color-pr-cl);
+	width: auto;
+  }
+
+/*==================Footer==================*/
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: space-around;
+}
+
+
 /*==================MEDIA 650==================*/
 @media screen and (min-width: 650px) {
 	.section-icon {
 		width: 80%;
 	}
 
-	.icono-container{
+	.section-icon {
+		width: 90%;
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.icono-container{
+		flex-direction: column;
+		width: 30%;
 	}
 
 	.icono-txt{
+		border-top:1px solid var(--color-sec);
+		border-left: none;
+	}
+
+	.noticia-img{
+		width: 40%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		text-align: left;
-		padding: 30px;
-		border-top:none;
-		border-left: 1px solid var(--color-sec);
 	}
+	
+	.noticia-img>img{
+		width: 85%;
+	}
+	
+	.noticia-txt{
+		width: 60%;
+		padding: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.noticia-container {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.noticia-container-r {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.form-container {
+		
+		width: 445px;
+		
+	  }
 
 }/*END 650px*/
 
@@ -494,22 +730,7 @@ main {
 		-webkit-transition: 0s;
 	}
 
-	.section-icon {
-		width: 90%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.icono-container{
-		flex-direction: column;
-		width: 30%;
-	}
-
-	.icono-txt{
-		border-top:1px solid var(--color-sec);
-		border-left: none;
-	}
+	
 
 }/*END 992px*/
 
@@ -517,7 +738,7 @@ main {
 @media screen and (min-width: 1200px) {
 
 	.cajaResponsive {
-		width: 1200;
+		width: 1200px;
 	}
 
 	.maxContainer {
