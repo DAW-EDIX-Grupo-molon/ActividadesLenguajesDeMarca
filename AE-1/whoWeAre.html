@@ -8,20 +8,27 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>¿Quienes somos?</h1>
-      </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="whoWeAre.html">¿Quienes somos?</a></li>
-        <li><a href="actionsAreas.html">Áreas de actuación</a></li>
-        <li><a href="location.html">Localización</a></li>
-        <li><a href="news.html">Noticias</a></li>
-        <li><a href="publications.html">Publicaciones</a></li>
-        <li><a href="contactUs.html">Contacta con nosotros</a></li>
-      </ul>
-    </nav>
+  <header id="cabecera">
+    <!-- LOGO -->
+    <div class="maxContainer">
+      <div class="logo">
+        <a href="index.html">
+            <img  class="fullContainer" src="./assets/icons/logo-grupo-molon.png" alt="Logo GrupoMolón.com">
+        </a>
+      </div>
+      <!-- NAVEGADOR -->
+      <nav class="nav-lau">
+        <ul>
+          <li><a href="news.html">Noticias</a></li>
+          <li><a href="whoWeAre.html">Quienes somos</a></li>
+          <li><a href="publications.html">Publicaciones</a></li>
+          <li><a href="actionAreas.html">Areas de actuación</a></li>
+          <li><a href="location.html">Localización</a></li>
+          <li><a href="contactUs.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
     
     <div id="seccion1">
       <div id="fotoQuienes">
@@ -57,7 +64,8 @@
             <img id="fotoCristina" src="assets/img/cristina foto.jpg"/>
           </div>
           <h3>Cristina Alvarez</h3>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing e </p>
+          <h5> Directora Ejecutiva </h5>
+          <p> Su principal tarea es que todo funcione correctamente y tanto como empresas y particulares estén contentos con proyectos y ayudas</p>
           <div class="img-git">
             <a href="https://github.com/elogin91" target="_blank">
               <img id="fotoGit" src="assets/img/github.png"/>
@@ -69,7 +77,7 @@
             <img id="fotoIvan" src="assets/img/imagen ivan.jpg"/>
           </div>
           <h3>Iván Sarió</h3>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing e </p>
+          <h5> Jefe de Proyectos</h5>
           <div class="img-git">
             <a href="https://github.com/ivansm-GitHub" target="_blank">
               <img id="fotoGit" src="assets/img/github.png"/>
@@ -82,7 +90,7 @@
             <img id="fotoLuxmy" src="assets/img/luxmy imagen.jpg"/>
           </div>
           <h3>Nagammah Luxmy</h3>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing e </p>
+          <p> Administadora y Secretaria General </p>
           <div class="img-git">
             <a href="https://github.com/NLArunasalam" target="_blank">
               <img id="fotoGit" src="assets/img/github.png"/>
@@ -109,32 +117,40 @@
 
 </body>
 
-<footer>
-  <div class="group-1">
-    <div class="box">
-      <figure>
-        <a href="#">
-          <img src="./assets/icons/Unir_2021_logo_white.svg" alt="Unir logo">
+<footer class="">
+  <div class="bg-negro p-top-6">
+    <div class="cajaResponsive centrar-contenedor footer-container p-bottom-6">
+      <div class="d-flex flex-direcction-column gap-25">
+        <span class="txt-cuerpo-bold-white">Nosotros</span>
+        <span class="txt-cuerpo-white-izq">Quienes somos</span>
+        <span class="txt-cuerpo-white-izq">Áreas de actuación</span>
+        <span class="txt-cuerpo-white-izq">Contacto</span>
+      </div>
+      <div class="d-flex flex-direcction-column gap-25">
+        <span class="txt-cuerpo-bold-white">GrupoMolón.com</span>
+        <span class="txt-cuerpo-white-izq">Noticias</span>
+        <span class="txt-cuerpo-white-izq">Publicaciones</span>
+        <span class="txt-cuerpo-white-izq">Localización</span>
+      </div>
+      <div class="d-flex flex-direcction-column gap-25">
+        <span class="txt-cuerpo-bold-white">Politicas</span>
+        <span class="txt-cuerpo-white-izq">Coockies</span>
+        <span class="txt-cuerpo-white-izq">Privacidad</span>
+      </div>
+    </div>
+    <div class="centrar-contenedor p-top-2 p-bottom-2 bg-blanco">
+      <div class="iconos">
+        <a href="https://www.instagram.com/">
+          <img src="./assets/icons/instagram-icon.svg" alt="icono instagram">
         </a>
-      </figure>
+        <a href="https://web.whatsapp.com/">
+          <img src="./assets/icons/whatsapp-icon.svg" alt="icono instagram">
+        </a>
+        <a href="https://twitter.com/">
+          <img src="./assets/icons/twitter-icon.svg" alt="icono instagram">
+        </a>
+      </div>
     </div>
-    <div class="box">
-      <p>Copyright &copy; 2023 Grupo Molón - Todos los derechos reservados.</p>
-    </div>
-  </div>
-
-  <div class="group-2">
-    <ul>
-      <li><a href="">Política privacidad</a></li>
-      <li><a href="">Cláusulas legales RGPD</a></li>
-      <li><a href="">Política de cookies</a></li>
-      <li><a href="">Aviso legal</a></li>
-    </ul>
-  </div>
-
-  <div class="group-3">
-    <p>Siguenos:</p>
-    <a href="" class="<i class=" fa fa-github" aria-hidden="true"></i>" GIT</i></a>
   </div>
 </footer>
 
