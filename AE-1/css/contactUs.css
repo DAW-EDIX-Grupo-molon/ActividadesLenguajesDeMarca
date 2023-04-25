@@ -1,22 +1,91 @@
 body {
     font-family: "Lato", sans-serif;
-    background: rgb(190, 171, 169);
-    background: radial-gradient(circle, rgba(190, 171, 169, 1) 2%, rgba(131, 116, 117, 1) 49%, rgba(96, 84, 83, 1) 100%);
     color: white;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-#page-container {
+.page-container {
     position: relative;
     display: flex;
     min-height: 100vh;
-    flex-direction: column
+    flex-direction: column;
+    background: white;
+}
+
+.content-wrap {
+    background: rgba(13, 17, 23, 1);
+}
+
+.logo {
+    height: fit-content;
+    width: 200px;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+.navbar
+{
+    background-color: rgba(19, 26, 37, 1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.35);
+}
+
+.navbar ul
+{
+  display: flex;
+  text-align: center;
+  align-items: left;
+  margin: 0;
+}
+
+.navbar ul li
+{
+  list-style: none;
+  padding: 8px;
+  position: relative;
+  transition: 0.5s;
+  display: block;
+}
+
+.navbar ul li a
+{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a:hover
+{
+  
+  background: #6378d8;
+  border-radius: 6px;
+}
+
+.navbar ul li ul
+{
+  display: none;
+}
+
+.navbar ul li:hover ul
+{
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  background: rgba(13, 17, 23, 1);
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px 2px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.35);
 }
 
 header {
-    background-image: url(../assets/img/Background-Header-1.jpg);
+    background-color: rgba(13, 17, 23, 1);
     height: 80px;
     margin: 0px;
     padding: 10px;
@@ -27,24 +96,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 1);;
 }
 
 form {
     max-width: 610px;
 }
 
-.formulario-recibido {
-    background-image: url();
-}
-
 fieldset {
     border-radius: 10px;
     margin: 10px;
-    border: 6px linear-gradient(90deg, rgba(17, 14, 187, 1) 2%, rgba(99, 120, 216, 0.5215336134453781) 100%);
-    background: #6378d8;
+    background: rgba(255, 255, 255, 1);;
     margin-bottom: 20px;
     z-index: 10;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    border: 1px solid var(--color-sec);
+    box-shadow: 0 0 15px rgba(69, 78, 255, .5);
+    color: rgba(69, 78, 255, 1.0);;
 }
 
 ::placeholder {
@@ -92,70 +160,13 @@ input[type=reset]:hover {
     background-color: #0e39fe;
 }
 
-nav {
-    position: sticky;
-    top: 0px;
-}
-.navbar
-{
-    background-color: #333;
-}
 
-.navbar ul
-{
-  display: flex;
-  text-align: center;
-  align-items: left;
-  margin: 0;
-}
-
-.navbar ul li
-{
-  list-style: none;
-  padding: 8px;
-  position: relative;
-  transition: 0.5s;
-  display: block;
-}
-
-.navbar ul li a
-{
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 10px;
-  display: block;
-}
-
-.navbar ul li a:hover
-{
-  
-  background: #6378d8;
-  border-radius: 6px;
-}
-
-.navbar ul li ul
-{
-  display: none;
-}
-
-.navbar ul li:hover ul
-{
-  display: block;
-  position: absolute;
-  margin-top: 5px;
-  background: #333;
-  border-radius: 6px;
-  width: 100%;
-  padding: 10px 2px;
-  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
-}
 footer ul {
 
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     width: 100%;
 }
 
@@ -194,18 +205,52 @@ footer li a:hover {
 
 .rad-label:hover,
 .rad-label:focus-within {
-    background: hsla(0, 0%, 80%, .14);
+    background: rgba(69, 78, 255, .5);
 }
 
 footer {
     width: 100%;
-    background-color: #333;
+    background-color: rgba(19, 26, 37, 1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.35);
     margin-top: auto;
+    display: flex;
+
+}
+
+footer ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+footer li {
+    margin: 10px;
+}
+
+footer li a {
+
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    background-color: #111;
 }
 
 @media screen and (max-width:800px) {
     footer {
         grid-template-columns: repeat(1, 1fr);
         padding: 35px, 0px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .navbar {
+        background-color: rgba(21, 33, 52, 0.5);
+        backdrop-filter: blur(10px);
     }
 }
