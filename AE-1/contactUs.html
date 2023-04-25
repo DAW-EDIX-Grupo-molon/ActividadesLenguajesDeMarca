@@ -16,20 +16,21 @@
     <div class="content-wrap">
       <nav>
         <div class="navbar">
-          <ul>
-            <li><img class="logo" src="./assets/icons/logo-grupo-molon.png" alt="logo-grupo-molon"></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">Noticias</a></li>
-            <li><a href="#">Para saber más...</a>
-              <ul>
-                <li><a href="whoWeAre.html">¿Quienes somos?</a></li>
-                <li><a href="actionsAreas.html">Áreas de actuación</a></li>
-                <li><a href="location.html">Localización</a></li>
-                <li><a href="publications.html">Publicaciones</a></li>
-                <li><a href="contactUs.html">Contacta con nosotros</a></li>
-              </ul>
-            </li>
-          </ul>
+          <div class="logo-navbar">
+            <a href="index.html"><img src="./assets/icons/logo-grupo-molon.png" alt="logo-grupo-molon"></a>
+          </div>
+          <div class="menu">
+            <button class="menu-btn"><span><p>Menú</p></span></button>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="news.html">Noticias</a></li>
+              <li><a href="whoWeAre.html">¿Quienes somos?</a></li>
+              <li><a href="actionsAreas.html">Áreas de actuación</a></li>
+              <li><a href="location.html">Localización</a></li>
+              <li><a href="publications.html">Publicaciones</a></li>
+              <li><a href="contactUs.html">Contacta con nosotros</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -156,7 +157,7 @@
 
             <div>
               <label for="nombre">Nombre</label>
-              <input class="form-item" type="text" name="nombre" id="nombre" placeholder="Tu Nombre"></p>
+              <input class="form-item" type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required></p>
             </div>
 
             <div>
@@ -230,7 +231,9 @@
       </div>
 
       <aside>
-
+        <button class="aside">
+          <a href="location.html">Localizanos</a>
+        </button>
       </aside>
     </div>
     <footer>
@@ -238,7 +241,7 @@
         <div class="box">
           <figure>
             <a href="#">
-              <img class="logo" src="./assets/icons/logo-grupo-molon.png" alt="Logo grupo Molón">
+              <img class="logo-footer" src="./assets/icons/logo-grupo-molon.png" alt="Logo grupo Molón">
             </a>
           </figure>
         </div>
@@ -247,7 +250,7 @@
         </div>
       </div>
 
-      <div class="group-2">
+      <div class="footer-legal">
         <ul>
           <li><a href="">Política privacidad</a></li>
           <li><a href="">Cláusulas legales RGPD</a></li>
