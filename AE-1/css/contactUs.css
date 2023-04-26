@@ -7,7 +7,8 @@ body {
     text-align: center;
 }
 
-.page-container {
+.page-container,
+main {
     position: relative;
     display: flex;
     min-height: 100vh;
@@ -173,7 +174,7 @@ fieldset {
 }
 
 ::placeholder {
-    color:rgba(44, 45, 63, 0.5);
+    color: rgba(44, 45, 63, 0.5);
 }
 
 .form-item {
@@ -183,7 +184,7 @@ fieldset {
     margin-top: 3px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color:rgba(69, 78, 255, 0.352);
+    background-color: rgba(69, 78, 255, 0.352);
     border: 3px solid white;
     border-radius: 6px;
     box-sizing: border-box;
@@ -304,6 +305,11 @@ footer>div {
     footer {
         flex-direction: column;
     }
+
+    .container-card,
+    .card {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -312,9 +318,26 @@ footer>div {
         backdrop-filter: blur(10px);
     }
 }
-/*
-TODO: set invalid css style cool 
-input:invalid {
-    background-color: green
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
-*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    border: 1px solid rgba(69, 78, 255, 1.0);
+    box-shadow: 0 0 15px rgba(69, 78, 255, .5);
+    color: rgba(69, 78, 255, 1.0);
+}
