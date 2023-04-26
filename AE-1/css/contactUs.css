@@ -166,7 +166,7 @@ fieldset {
 }
 
 ::placeholder {
-    color: #5b6bb3;
+    color:rgba(44, 45, 63, 0.5);
 }
 
 .form-item {
@@ -176,7 +176,7 @@ fieldset {
     margin-top: 3px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: rgb(180, 200, 226);
+    background-color:rgba(69, 78, 255, 0.352);
     border: 3px solid white;
     border-radius: 6px;
     box-sizing: border-box;
@@ -184,9 +184,9 @@ fieldset {
 }
 
 .form-item:focus {
-    color: #0e39fe;
+    color: #0b1a5f;
     border: 3px solid #0e39fe;
-    background-color: #e7c5c7;
+    background-color: #66b3fb8e;
 }
 
 textarea.form-item {
