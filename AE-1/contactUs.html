@@ -77,13 +77,13 @@
             <h2>Datos de contacto:</h2>
 
             <div>
-              <label for="social">Razón social:</label>
-              <input class="form-item" type="text" name="social" id="social" placeholder="Nombre de la empresa"></p>
+              <label for="social">Razón social:*</label>
+              <input class="form-item" type="text" name="social" id="social" placeholder="Nombre de la empresa" required></p>
             </div>
 
             <div>
-              <label for="areaActuacion">Sector de la empresa</label>
-              <input class="form-item" type="text" name="areaActuacion" id="areaActuacion" placeholder="Tus Apellidos">
+              <label for="areaActuacion">Sector de la empresa*</label>
+              <input class="form-item" type="text" name="areaActuacion" id="areaActuacion" placeholder="Sector de la hostelería" required>
             </div>
 
             <div>
@@ -104,13 +104,13 @@
             </div>
 
             <div>
-              <label for="telefono">Télefono de contacto:</label>
-              <input class="form-item" type="tel" name="telefono" id="telefono" size="9" placeholder="666666666">
+              <label for="telefono">Télefono de contacto:*</label>
+              <input class="form-item" type="tel" name="telefono" id="telefono" size="9" placeholder="666666666" required>
             </div>
 
             <div>
-              <label for="email">Dirección de correo electrónico:</label>
-              <input class="form-item" type="email" name="email" id="email" placeholder="Tu Correo Electrónico"></p>
+              <label for="email">Dirección de correo electrónico:*</label>
+              <input class="form-item" type="email" name="email" id="email" placeholder="Tu Correo Electrónico" required>
             </div>
 
             <h2>Queremos conoceros mejor...</h2>
@@ -138,8 +138,8 @@
           <fieldset>
             <div>
               <label for="terminosLegales">¿Acepta los términos legales y el tratamiento de sus datos
-                personales?</label><br>
-              <input type="checkbox" name="terminosLegales" id="terminosLegales">Al marcar esta casilla acepta el
+                personales? *</label><br>
+              <input  type="checkbox" name="terminosLegales" id="terminosLegales" required>Al marcar esta casilla acepta el
               tratamiento de sus datos
               personales, por Grupo Molón S.L.
             </div>
@@ -156,18 +156,18 @@
             <h2>Datos de contacto:</h2>
 
             <div>
-              <label for="nombre">Nombre</label>
+              <label for="nombre">Nombre: *</label>
               <input class="form-item" type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required></p>
             </div>
 
             <div>
-              <label for="apellidos">Apellidos</label>
+              <label for="apellidos">Apellidos:</label>
               <input class="form-item" type="text" name="apellidos" id="apellidos" placeholder="Tus Apellidos">
             </div>
 
             <div>
-              <label for="nacimiento">Fecha de Nacimiento</label>
-              <input class="form-item" type="date" name="nacimiento" id="nacimiento" min="1900">
+              <label for="nacimiento">Fecha de Nacimiento: *</label>
+              <input class="form-item" type="date" name="nacimiento" id="nacimiento" min="1900" max="2005" required>
             </div>
 
             <div>
@@ -183,13 +183,13 @@
             </div>
 
             <div>
-              <label for="telefono">Télefono de contacto:</label>
-              <input class="form-item" type="tel" name="telefono" id="telefono" size="9" placeholder="666666666">
+              <label for="telefono">Télefono de contacto: *</label>
+              <input class="form-item" type="tel" name="telefono" id="telefono" size="9" placeholder="666666666" required>
             </div>
 
             <div>
-              <label for="email">Dirección de correo electrónico:</label>
-              <input class="form-item" type="email" name="email" id="email" placeholder="Tu Correo Electrónico"></p>
+              <label for="email">Dirección de correo electrónico: *</label>
+              <input class="form-item" type="email" name="email" id="email" placeholder="Tu Correo Electrónico" required>
             </div>
 
             <h2>Queremos conocerte mejor...</h2>
@@ -217,8 +217,8 @@
           <fieldset>
             <div>
               <label for="terminosLegales">¿Acepta los términos legales y el tratamiento de sus datos
-                personales?</label><br>
-              <input type="checkbox" name="terminosLegales" id="terminosLegales">Al marcar esta casilla acepta el
+                personales? *</label><br>
+              <input  type="checkbox" name="terminosLegales" id="terminosLegales" required>Al marcar esta casilla acepta el
               tratamiento de sus datos
               personales, por Grupo Molón S.L.
             </div>
@@ -259,7 +259,7 @@
         </ul>
       </div>
 
-      <div class="group-3">
+      <div class="social-href">
         <p>Sigue nuestro trabajo en redes:</p>
         <a href="" class="">
           <img src="./assets/icons/instagram-icon.svg" alt="icono instagram">
