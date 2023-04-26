@@ -7,6 +7,8 @@
 	--color-gris: rgb(161, 161, 161);
 	--color-sec: rgba(69, 78, 255, 1.0);
 	--color-negro: rgba(28, 28, 28, 1.0);
+	--color-primario: #003D64;
+	--color-primario-dark:  #004E64;
 
 	/*FUENTES*/
 	--font-esp: "montserrat", sans-serif;
@@ -353,23 +355,26 @@ img{
     height: auto;
 }
 #seccion1{
-    height: 400px;
+    height: 300px;
     margin-top: 10px;
     text-align: left;
+	margin-right: 25%;
 }
 #fotoQuienes{
-    width: 40%;
+    width: 30%;
     display: inline-block;
+	margin-top: 60px;
+	
     
 }
 
 #texto{
-    width: 55%;
+    width: 50%;
     display: inline-block;
     vertical-align: top;
     font-size: 20px;
     line-height: 2;
-    padding-left: 10px;
+    padding-left: 30px;
 	color: black;
 }
 
@@ -377,12 +382,62 @@ img{
     text-align: center;
 }
 
+aside{
+	
+	box-sizing: border-box;
+	float: right;
+	width: 200px;
+	display: block;
+	border: solid var(--color-gris);
+	box-shadow: 2px 2px 5px var(--color-gris);
+	background-color: aliceblue;
+	margin: 10px;
+}
+aside h4{
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color:  #003D64;
+	padding: 7px;
+	text-align: center;
+	color: white;
+	border-top: solid 1px ;
+	border-bottom: solid 1px;
+}
+.info-lateral li  a {
+	color: black;
+	display: flex;
+	text-decoration: none;
+}
+
+
+.info-lateral form input[type="email"], .info-lateral form input[type="password"]{
+	width: 100%;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.info-lateral form input[type="submit"]{
+	width: 100%;
+	text-transform: uppercase;
+	color: white;
+	background-color: #005A64;
+	padding: 10px;
+	border: none;
+	transition: all 0.3s;
+}
+.info-lateral form input[type="submit"] :hover{
+	cursor: pointer;
+	background-color: var(--color-primario-dark);
+}
+
+
 #division{
     text-align: center;
     padding: 100px 0px;
     margin-top: 20%;
-    
-background: linear-gradient(90deg, rgba(20,88,170,1) 12%, rgba(7,103,170,1) 35%, rgba(7,162,194,1) 56%, rgba(1,192,239,1) 88%);
+    color: azure;
+	background: linear-gradient(90deg, rgba(3,23,37,1) 37%, rgba(6,166,200,1) 98%);
 }
 
 #seccion2 {
@@ -394,7 +449,7 @@ background: linear-gradient(90deg, rgba(20,88,170,1) 12%, rgba(7,103,170,1) 35%,
     margin: 5% auto 0;
 	
 }
-#contenedor-nosotros p, h3, h5{
+#contenedor-nosotros  h3, h5{
     justify-content: center;
 	color: white;
 	line-height: 1.5;
@@ -425,4 +480,14 @@ background: linear-gradient(90deg, rgba(20,88,170,1) 12%, rgba(7,103,170,1) 35%,
 	display: inline-block;
 	margin: 0 20px 0 20px;
 
+}
+.enlaces a{
+	display: block;
+	margin: 0 20px 0 20px;
+	text-decoration: none;
+}
+
+
+.cajaResponsive{
+	padding-right: 100%;
 }
