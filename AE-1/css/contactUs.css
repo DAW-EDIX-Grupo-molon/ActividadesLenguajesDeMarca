@@ -284,6 +284,11 @@ footer>div {
     background-color: #111;
 }
 
+.fa {
+    text-decoration: none;
+}
+
+
 @media screen and (max-width:380px) {
     header {
         height: 100px;
