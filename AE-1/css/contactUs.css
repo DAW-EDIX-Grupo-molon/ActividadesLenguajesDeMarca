@@ -341,3 +341,7 @@ footer>div {
     box-shadow: 0 0 15px rgba(69, 78, 255, .5);
     color: rgba(69, 78, 255, 1.0);
 }
+
+.card img {
+    width: 100%;
+}
