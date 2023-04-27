@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
   <link rel="stylesheet" href="./css/contactUs.css">
-  <link rel="icon" href="./assets/icons/UNIR-icon-1-32x32.png">
+  <link rel="icon" href="./assets/icons/grupoMolon.ico">
 
-  <title>ContactUs-Grupo-Molón</title>
+  <title>Contáctanos</title>
 </head>
 
 <body>
@@ -77,13 +77,13 @@
             <h2>Datos de contacto:</h2>
 
             <div>
-              <label for="social">Razón social:</label>
-              <input class="form-item" type="text" name="social" id="social" placeholder="Nombre de la empresa"></p>
+              <label for="social">Razón social:*</label>
+              <input class="form-item" type="text" name="social" id="social" placeholder="Nombre de la empresa" required></p>
             </div>
 
             <div>
-              <label for="areaActuacion">Sector de la empresa</label>
-              <input class="form-item" type="text" name="areaActuacion" id="areaActuacion" placeholder="Tus Apellidos">
+              <label for="areaActuacion">Sector de la empresa*</label>
+              <input class="form-item" type="text" name="areaActuacion" id="areaActuacion" placeholder="Sector de la hostelería" required>
             </div>
 
             <div>
@@ -104,13 +104,13 @@
             </div>
 
             <div>
-              <label for="telefono">Télefono de contacto:</label>
-              <input class="form-item" type="tel" name="telefono" id="telefono" size="9" placeholder="666666666">
+              <label for="telefono">Télefono de contacto:*</label>
+              <input class="form-item" type="tel" name="telefono" id="telefono" size="9" placeholder="666666666" required>
             </div>
 
             <div>
-              <label for="email">Dirección de correo electrónico:</label>
-              <input class="form-item" type="email" name="email" id="email" placeholder="Tu Correo Electrónico"></p>
+              <label for="email">Dirección de correo electrónico:*</label>
+              <input class="form-item" type="email" name="email" id="email" placeholder="Tu Correo Electrónico" required>
             </div>
 
             <h2>Queremos conoceros mejor...</h2>
@@ -138,8 +138,8 @@
           <fieldset>
             <div>
               <label for="terminosLegales">¿Acepta los términos legales y el tratamiento de sus datos
-                personales?</label><br>
-              <input type="checkbox" name="terminosLegales" id="terminosLegales">Al marcar esta casilla acepta el
+                personales? *</label><br>
+              <input  type="checkbox" name="terminosLegales" id="terminosLegales" required>Al marcar esta casilla acepta el
               tratamiento de sus datos
               personales, por Grupo Molón S.L.
             </div>
@@ -156,18 +156,18 @@
             <h2>Datos de contacto:</h2>
 
             <div>
-              <label for="nombre">Nombre</label>
+              <label for="nombre">Nombre: *</label>
               <input class="form-item" type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required></p>
             </div>
 
             <div>
-              <label for="apellidos">Apellidos</label>
+              <label for="apellidos">Apellidos:</label>
               <input class="form-item" type="text" name="apellidos" id="apellidos" placeholder="Tus Apellidos">
             </div>
 
             <div>
-              <label for="nacimiento">Fecha de Nacimiento</label>
-              <input class="form-item" type="date" name="nacimiento" id="nacimiento" min="1900">
+              <label for="nacimiento">Fecha de Nacimiento: *</label>
+              <input class="form-item" type="date" name="nacimiento" id="nacimiento" min="1900" max="2005" required>
             </div>
 
             <div>
@@ -183,13 +183,13 @@
             </div>
 
             <div>
-              <label for="telefono">Télefono de contacto:</label>
-              <input class="form-item" type="tel" name="telefono" id="telefono" size="9" placeholder="666666666">
+              <label for="telefono">Télefono de contacto: *</label>
+              <input class="form-item" type="tel" name="telefono" id="telefono" size="9" placeholder="666666666" required>
             </div>
 
             <div>
-              <label for="email">Dirección de correo electrónico:</label>
-              <input class="form-item" type="email" name="email" id="email" placeholder="Tu Correo Electrónico"></p>
+              <label for="email">Dirección de correo electrónico: *</label>
+              <input class="form-item" type="email" name="email" id="email" placeholder="Tu Correo Electrónico" required>
             </div>
 
             <h2>Queremos conocerte mejor...</h2>
@@ -217,8 +217,8 @@
           <fieldset>
             <div>
               <label for="terminosLegales">¿Acepta los términos legales y el tratamiento de sus datos
-                personales?</label><br>
-              <input type="checkbox" name="terminosLegales" id="terminosLegales">Al marcar esta casilla acepta el
+                personales? *</label><br>
+              <input  type="checkbox" name="terminosLegales" id="terminosLegales" required>Al marcar esta casilla acepta el
               tratamiento de sus datos
               personales, por Grupo Molón S.L.
             </div>
@@ -237,37 +237,37 @@
       </aside>
     </div>
     <footer>
-      <div class="group-1">
-        <div class="box">
+      <div class="footer-logo-copyright">
+        <div class="footer-logo">
           <figure>
-            <a href="#">
+            <a href="index.html">
               <img class="logo-footer" src="./assets/icons/logo-grupo-molon.png" alt="Logo grupo Molón">
             </a>
           </figure>
         </div>
-        <div class="box">
+        <div class="footer-copyright">
           <p>Copyright &copy; 2023 Grupo Molón - Todos los derechos reservados.</p>
         </div>
       </div>
 
       <div class="footer-legal">
         <ul>
-          <li><a href="">Política privacidad</a></li>
-          <li><a href="">Cláusulas legales RGPD</a></li>
-          <li><a href="">Política de cookies</a></li>
-          <li><a href="">Aviso legal</a></li>
+          <li><a href="politica.html">Política privacidad</a></li>
+          <li><a href="politica.html">Cláusulas legales RGPD</a></li>
+          <li><a href="politica.html">Política de cookies</a></li>
+          <li><a href="politica.html">Aviso legal</a></li>
         </ul>
       </div>
 
-      <div class="group-3">
+      <div class="social-href">
         <p>Sigue nuestro trabajo en redes:</p>
-        <a href="" class="">
+        <a href="https://www.instagram.com/" class="fa">
           <img src="./assets/icons/instagram-icon.svg" alt="icono instagram">
         </a>
-        <a href="" class="">
+        <a href="https://www.whatsapp.com/" class="fa">
           <img src="./assets/icons/whatsapp-icon.svg" alt="icono whatsapp">
         </a>
-        <a href="" class="">
+        <a href="https://twitter.com/" class="fa">
           <img src="./assets/icons/twitter-icon.svg" alt="icono twitter">
         </a>
       </div>

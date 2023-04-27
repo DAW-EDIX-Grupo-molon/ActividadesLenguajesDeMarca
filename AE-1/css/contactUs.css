@@ -1,3 +1,4 @@
+/* Estructura y formato básico de la página WEB*/
 body {
     font-family: "Lato", sans-serif;
     color: white;
@@ -6,7 +7,8 @@ body {
     text-align: center;
 }
 
-.page-container {
+.page-container,
+main {
     position: relative;
     display: flex;
     min-height: 100vh;
@@ -18,6 +20,7 @@ body {
     background: rgba(13, 17, 23, 1);
 }
 
+/* Barra de navegación que se muestra siempre. */
 nav {
     position: sticky;
     top: 0px;
@@ -30,6 +33,7 @@ nav {
     height: 80px;
 }
 
+/* Posicionando y redimensionando logo de la barra de navegación. */
 .logo-navbar {
     width: 30vw;
     max-width: 165px;
@@ -43,6 +47,7 @@ nav {
     width: 100%;
 }
 
+/* Posicionamiento, redimensionalizando y formateando el botón del menú desplegable.*/
 .menu-btn {
     font-size: 1.5rem;
     background-color: transparent;
@@ -56,6 +61,7 @@ nav {
     top: 18px;
 }
 
+/* Formato del texto del botón que activa el menú desplegable.*/
 .menu-btn p {
     font-family: "lato", sans-serif;
     font-weight: 300;
@@ -66,6 +72,7 @@ nav {
     padding: 0;
 }
 
+/* Posicionamiento, dimensión y formato del menú desplegable*/
 .menu ul {
     display: none;
     background: rgba(13, 17, 23, 1);
@@ -106,6 +113,7 @@ nav {
     border-radius: 6px;
 }
 
+/* Posicionamiento y formato del encabezado de la página.*/
 header {
     background-color: rgba(13, 17, 23, 1);
     height: 80px;
@@ -113,8 +121,7 @@ header {
     padding: 10px;
 }
 
-
-
+/* Formato del atajo para redirección a la sección localízame.*/
 .aside {
     position: fixed;
     right: 0;
@@ -138,6 +145,7 @@ header {
     box-shadow: 0px 0px 10px rgba(69, 78, 255, .5);
 }
 
+/* Formato de los formularios.*/
 .formularios {
     flex-direction: column;
     display: flex;
@@ -166,7 +174,7 @@ fieldset {
 }
 
 ::placeholder {
-    color: #5b6bb3;
+    color: rgba(44, 45, 63, 0.5);
 }
 
 .form-item {
@@ -176,7 +184,7 @@ fieldset {
     margin-top: 3px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: rgb(180, 200, 226);
+    background-color: rgba(69, 78, 255, 0.352);
     border: 3px solid white;
     border-radius: 6px;
     box-sizing: border-box;
@@ -184,9 +192,9 @@ fieldset {
 }
 
 .form-item:focus {
-    color: #0e39fe;
+    color: #0b1a5f;
     border: 3px solid #0e39fe;
-    background-color: #e7c5c7;
+    background-color: #66b3fb8e;
 }
 
 textarea.form-item {
@@ -232,6 +240,7 @@ input[type=reset]:hover {
     background: rgba(69, 78, 255, .5);
 }
 
+/* Formato del pié de página.*/
 footer {
     width: 100%;
     background-color: rgba(19, 26, 37, 1);
@@ -276,6 +285,11 @@ footer>div {
     background-color: #111;
 }
 
+.fa {
+    text-decoration: none;
+}
+
+
 @media screen and (max-width:380px) {
     header {
         height: 100px;
@@ -291,6 +305,11 @@ footer>div {
     footer {
         flex-direction: column;
     }
+
+    .container-card,
+    .card {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -299,9 +318,30 @@ footer>div {
         backdrop-filter: blur(10px);
     }
 }
-/*
-TODO: set invalid css style cool 
-input:invalid {
-    background-color: green
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
-*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    border: 1px solid rgba(69, 78, 255, 1.0);
+    box-shadow: 0 0 15px rgba(69, 78, 255, .5);
+    color: rgba(69, 78, 255, 1.0);
+}
+
+.card img {
+    width: 100%;
+}
