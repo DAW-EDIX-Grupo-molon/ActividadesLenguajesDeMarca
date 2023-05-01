@@ -163,14 +163,12 @@ fieldset {
     border-radius: 10px;
     margin: 10px;
     background: rgba(255, 255, 255, 1);
-    ;
     margin-bottom: 20px;
     z-index: 10;
     border-radius: 5px;
-    border: 1px solid var(--color-sec);
+    border: 1px solid rgba(69, 78, 255, .5);
     box-shadow: 0 0 15px rgba(69, 78, 255, .5);
     color: rgba(69, 78, 255, 1.0);
-    ;
 }
 
 ::placeholder {
