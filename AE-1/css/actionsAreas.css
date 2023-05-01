@@ -1,45 +1,232 @@
+
 body {
     font-family: "Lato", sans-serif;
-    background: #837475;
-    color: white;
+    color: rgb(35, 20, 20);
     margin: 0;
-    padding: 0;
+    padding: 90;
     text-align: center;
+
+	--color-pr-cl: rgba(255, 255, 255, 1);
+	--color-pr-cl-25: rgba(42, 62, 92, 0.2);
+	--color-pr-os: rgba(13, 17, 23, 1);
+	--color-gris: rgb(161, 161, 161);
+	--color-sec: rgba(69, 78, 255, 1.0);
+	--color-negro: rgba(28, 28, 28, 1.0);
+	--color-primario: #003D64;
+	--color-primario-dark:  #004E64;
+  }
+ img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 }
-
-
-header {
-    background-image: url(../assets/img/Background-Header-1.jpg);
-    height: 80px;
-    margin: 0px;
+html {
+	scroll-behavior: smooth;
+	-webkit-scroll-behavior: smooth;
+	-moz-scroll-behavior: smooth;
+	-o-scroll-behavior: smooth;
+}
+  
+  /* Estilo del encabezado */
+  header {
+    background-color: #003366;
+    color: #fff;
     padding: 10px;
+  }
+
+#Cabecera {
+  background-color: rgba(19, 26, 37, 1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.35);
+    padding-top: 100px;
+    padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	
+	height: 100px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	z-index: 100;
 }
 
-nav {
-    position: sticky;
-    top: 0px;
-}
+.logo-inicio {
+    max-width: 165px;
+    min-width: 165px;
+    position: fixed;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
 
-ul {
-
-    list-style-type: none;
+  .logo-inicio {
+    max-width: 165px;
+    min-width: 165px;
+    top: 15px;
+    position: fixed;
+  }
+  
+  .Navegador {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .menu {
+    display: inline-block;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
-}
-
-li {
-    float: left;
-}
-li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu a {
+    display: inline-block;
+    padding: 10px;
     text-decoration: none;
-}
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu a:hover {
+    text-decoration: line-through;
+  }
+  
+  .Cuerpo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Contenido {
+    width: 100%;
+    padding: 0 20px;
+  }
+  #fotoAT img {
+    width: 100%;
+  }
+  #texto {
+    text-align: justify;
+    margin-top: 20px;
+  }
+ 
+   .aside-container {
+    float: right;
+    background-color: white; 
+    border: 2px solid black; 
+    padding: 20px; 
+    padding-top: 10px;
+    width: 70%; 
+    margin: 100px;
+  }
+  
+  .aside-container h1 {
+    margin-top: 0;
+    font-size: 24px; 
+    text-decoration: underline; 
+  }
 
-li a:hover {
-    background-color: #111;
-}
+  .aside-container h2 {
+    margin-top: 30px;
+    font-size: 16px; 
+  }
+  
+  .aside-container img {
+    max-width: 40%; 
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+  
+  .mapa-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-href {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-href p {
+    margin-right: 10px;
+  }
+  
+  .social-href img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Changes for smaller screens */
+    header {
+      padding: 20px;
+    }
+    .logo-inicio {
+      max-width: 120px;
+      min-width: 120px;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .Navegador {
+      top: 120px;
+    }
+    .menu {
+      display: block;
+      margin: 20px 0;
+      padding: 0;
+    }
+    .menu li {
+      display: block;
+      margin: 10px 0;
+    }
+    .menu a {
+      display: block;
+      padding: 10px;
+    }
+    .aside-container {
+      float: none;
+      width: 100%;
+      margin: 20px 0;
+    }
+    .aside-container img {
+      max-width: 100%;
+    }
+    .mapa-container {
+      flex-direction: column;
+    }
+    .social-href {
+      margin-top: 20px;
+    }
+  }
+  
+
