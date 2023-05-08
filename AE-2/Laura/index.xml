@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libros>
+        <libro id="L0001" tipo_clase= "novela">
+            <titulo>Lo que el viento se llevó</titulo>
+            <capitulo titulo="Capítulo 1" num_paginas="60">
+                <contenido enlace="http://loqueelvientosellevo.com/capitulo1"/>
+            </capitulo>
+            <capitulo titulo="Capítulo 2" num_paginas="55">
+                <contenido enlace="http://loquevientosellevo.com/capitulo2"/>
+            </capitulo>
+            <indice num_paginas="2"/>
+            <sinopsis>Pues lo que el viento se llevó y no volvió</sinopsis>
+        </libro>
+
+        <libro id="L0002" tipo_clase="infantil">
+            <titulo>El capitán calzoncillos</titulo>
+            <capitulo titulo="Capítulo 1" num_paginas="15">
+                <contenido enlace="http://barcodevapor.com/capitulo1"/>
+            </capitulo>
+            <capitulo titulo="Capítulo 2" num_paginas="12">
+                <contenido enlace="http://barcodevapor.com/capitulo2"/>
+            </capitulo>
+            <indice num_paginas="1"/>
+            <sinopsis>Un joven que va en calzonillos</sinopsis>
+        </libro>
+
+        <libro id="L0003" tipo_clase="didactico">
+            <titulo>MacMillan Tiger 5 student book</titulo>
+            <capitulo titulo="Sport" num_paginas="15">
+                <contenido enlace="http://tiger.macmillan.es//page5"/>
+            </capitulo>
+            <capitulo titulo="The weather" num_paginas="12">
+                <contenido enlace="http://tiger.macmillan.es//page40"/>
+            </capitulo>
+            <indice num_paginas="4"/>
+            <sinopsis>Libro educativo de inglés</sinopsis>
+        </libro>
+    </libros>
+
+    <periodicos>
+        <periodico id="P0001">
+            <periodico Id="P1234" tipo_clase="nacional" fecha_publicacion="2023-04-08">
+                <seccion tipo="cronica">
+                    <articulo autor="Sergio Lorenzo">El terrible caso del 'sádico de Cáceres'</articulo>
+                    <contenido enlace="https://www.hoy.es/extremadura/cronica-negra/terrible-sadico-caceres-20230406080842-nt.html"/>
+                </seccion>
+                <seccion tipo="sucesos">
+                    <articulo autor="R. H.">Roban 9.500 euros a un vecino de Montijo con la estafa 'call spoofing'</articulo>
+                    <contenido enlace="https://www.hoy.es/prov-badajoz/roban-9500-euros-vecino-montijo-estafa-call-20230504130133-nt.html"/>
+                </seccion>
+                <indice paginas="1"/>
+            </periodico>
+
+            <periodico Id="P2222" tipo_clase="internacional" fecha_publicacion="2023-05-04">
+                <seccion tipo="opinion">
+                    <articulo autor="Damon Winter">In Mississippi, the Governor Has Been So Bad That This Time It Might Be Different</articulo>
+                    <contenido enlace="https://www.nytimes.com/international/section/opinion"/>
+                </seccion>
+                <seccion tipo="deportes">
+                    <articulo autor="Victor Mather">Knicks vs. Heat: Brawls, Nail-Biters and a Clinging Coach</articulo>
+                    <contenido enlace="https://www.nytimes.com/2023/04/27/sports/basketball/knicks-heat-nba-playoffs.html"/>
+                </seccion>
+                <indice paginas="1"/>
+            </periodico>
+        </periodico>
+    </periodicos>
+
+    <revistas>
+        <revista Id="R1" tipo_clase="informática" num_revista="11">
+            <titulo>Revista de informática</titulo>
+            <indice num_paginas="1"/>
+            <secciones>
+                <seccion tipo="noticias" num_paginas="10">
+                <contenido enlace="https://siliconnews.plataformasinc.es/hardware/"/>
+                </seccion>
+                <seccion tipo="artículos" num_paginas="11">
+                <contenido enlace="https://siliconnews.plataformasinc.es/internet/"/>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista Id="R2" tipo_clase="coches" num_revista="05">
+            <titulo>Revista de informática</titulo>
+            <indice num_paginas="2"/>
+            <secciones>
+                <seccion tipo="noticias" num_paginas="5">
+                <contenido enlace="https://revistacar.es/car-store-vehiculos/"/>
+                </seccion>
+                <seccion tipo="de interés" num_paginas="1">
+                <contenido enlace="https://siliconnews.plataformasinc.es/magzine-pruebs/"/>
+                </seccion>
+            </secciones>
+        </revista>
+    
+        <revista Id="R2" tipo_clase="coraazón" num_revista="350">
+            <titulo>Revista de informática</titulo>
+            <indice num_paginas="2"/>
+            <secciones>
+                <seccion tipo="moda" num_paginas="16">
+                <contenido enlace="https://hola.com/moda/tendencias/"/>
+                </seccion>
+                <seccion tipo="horoscopo" num_paginas="6">
+                <contenido enlace="https://hola.com/horoscopo/"/>
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+</biblioteca>
