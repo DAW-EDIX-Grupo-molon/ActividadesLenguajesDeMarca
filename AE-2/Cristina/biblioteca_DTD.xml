@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "index.dtd">
+<biblioteca>
+    <libros>
+        <libro id="L1232" tipo_clase="novela" paginas="300">
+            <titulo>Amor de media noche</titulo>
+            <indice>????</indice>
+            <sipnosis>Un gran libro</sipnosis>
+            <capitulos>
+                <capitulo paginas="100">
+                    <titulo>Un encuentro inesperado</titulo>
+                    <contenido enlace="enlacecap1" />
+                </capitulo>
+                <capitulo paginas="100">
+                    <titulo>Conociendo a un extraño</titulo>
+                    <contenido enlace="enlacecap2" />
+                </capitulo>
+                <capitulo paginas="100">
+                    <titulo>Asesinato nocturno</titulo>
+                    <contenido enlace="enlacecap3" />
+                </capitulo>
+            </capitulos>
+        </libro>
+        <libro id="L1233" tipo_clase="infantil" paginas="50">
+            <titulo>Cuentos para dormir</titulo>
+            <indice>????</indice>
+            <sipnosis>Un gran libro</sipnosis>
+            <capitulos>
+                <capitulo paginas="15">
+                    <titulo>Los 3 cerditos</titulo>
+                    <contenido enlace="enlacecap1" />
+                </capitulo>
+                <capitulo paginas="15">
+                    <titulo>Caperucita Roja</titulo>
+                    <contenido enlace="enlacecap2" />
+                </capitulo>
+                <capitulo paginas="20">
+                    <titulo>Pulgacito</titulo>
+                    <contenido enlace="enlacecap3" />
+                </capitulo>
+            </capitulos>
+        </libro>
+        <libro id="L1234" tipo_clase="didactico" paginas="100">
+            <titulo>Creando mi primera página Web</titulo>
+            <indice>????</indice>
+            <sipnosis>Un gran libro</sipnosis>
+            <capitulos>
+                <capitulo paginas="33">
+                    <titulo>Aprendiendo HTML</titulo>
+                    <contenido enlace="enlacecap1" />
+                </capitulo>
+                <capitulo paginas="33">
+                    <titulo>Aprendiendo CSS</titulo>
+                    <contenido enlace="enlacecap2" />
+                </capitulo>
+                <capitulo paginas="34">
+                    <titulo>Aprendiendo JS</titulo>
+                    <contenido enlace="enlacecap3" />
+                </capitulo>
+            </capitulos>
+        </libro>
+    </libros>
+
+    <revistas>
+        <revista id="R159999" tipo_clase="informática" paginas="30">
+            <titulo>El OverStackeando el Papel</titulo>
+            <numeroRevista>3</numeroRevista>
+            <indiceContenido>????</indiceContenido>
+            <secciones>
+                <seccion paginas="9">
+                    <contenido enlace="enlace seccion1" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion2" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion3" />
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R3" tipo_clase="coches" paginas="30">
+            <titulo>El corazón de la F1</titulo>
+            <numeroRevista>1</numeroRevista>
+            <indiceContenido>?????</indiceContenido>
+            <secciones>
+                <seccion paginas="9">
+                    <contenido enlace="enlace seccion1" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion2" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion3" />
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R1599" tipo_clase="corazón" paginas="30">
+            <titulo>Salsa Rosa con Belén Esteban</titulo>
+            <numeroRevista>2</numeroRevista>
+            <indiceContenido>????</indiceContenido>
+            <secciones>
+                <seccion paginas="9">
+                    <contenido enlace="enlace seccion1" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion2" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion3" />
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R222222" tipo_clase="investigación" paginas="30">
+            <titulo>Universo Espacio</titulo>
+            <numeroRevista>4</numeroRevista>
+            <indiceContenido>????</indiceContenido>
+            <secciones>
+                <seccion paginas="9">
+                    <contenido enlace="enlace seccion1" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion2" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion3" />
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R13333333" tipo_clase="otras" paginas="30">
+            <titulo>Facilícimo, punto de cruz</titulo>
+            <numeroRevista>5</numeroRevista>
+            <indiceContenido>????</indiceContenido>
+            <secciones>
+                <seccion paginas="9">
+                    <contenido enlace="enlace seccion1" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion2" />
+                </seccion>
+                <seccion paginas="10">
+                    <contenido enlace="enlace seccion3" />
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+    <periodicos>
+        <periodico id="P1234" tipo_clase="nacional" fechaPublicacion="2023/05/11">
+            <índice>?????</índice>
+            <secciones>
+                <seccion tipo_clase="económica">
+                    <artículo autor="Pepe Lope">
+                        <contenido referencia="refInfo1" />
+                    </artículo>
+                    <artículo autor="Manuel Ruíz">
+                        <contenido referencia="refInfo2" />
+                    </artículo>
+                </seccion>
+                <seccion tipo_clase="opinión">
+                    <artículo autor="María Nieves">
+                        <contenido referencia="refInfo3" />
+                    </artículo>
+                    <artículo autor="Ana Espejo">
+                        <contenido referencia="refInfo4" />
+                    </artículo>
+                </seccion>
+            </secciones>
+        </periodico>
+    </periodicos>
+</biblioteca>
