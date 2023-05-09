@@ -144,7 +144,7 @@
         </revista>
     </revistas>
     <periodicos>
-        <periodico Id="P1234" tipo_clase="nacional" fechaPublicacion="2023/05/11">
+        <periodico id="P1234" tipo_clase="nacional" fechaPublicacion="2023/05/11">
             <indice>?????</indice>
             <secciones>
                 <seccion tipo_clase="económica">

@@ -24,14 +24,14 @@
 <!ELEMENT titulo (#PCDATA)>
 <!ELEMENT numeroRevista (#PCDATA)>
 <!ELEMENT secciones (seccion+)>
-<!ELEMENT seccion (contenido | articulo)>
+<!ELEMENT seccion (contenido | articulo*)>
 <!ATTLIST seccion
-    tipo_clase (económica | opinión | deportes | nacional | internacional) 
-    paginas CDATA>
+    tipo_clase (económica | opinión | deportes | nacional | internacional) #IMPLIED
+    paginas CDATA #IMPLIED>
 <!ELEMENT periodicos (periodico+)>
 <!ELEMENT periodico (indice, secciones)>
 <!ATTLIST periodico
-    Id ID #REQUIRED
+    id ID #REQUIRED
     tipo_clase (nacional | internacional) #REQUIRED
     fechaPublicacion CDATA #REQUIRED>
 <!ELEMENT articulo (contenido)>
