@@ -16,20 +16,18 @@
     enlace CDATA #REQUIRED>
 
 <!ELEMENT revistas (revista+)>
-<!ELEMENT revista (titulo, numero, indice, secciones)>
+<!ELEMENT revista (titulo, numeroRevista, indice, secciones)>
 <!ATTLIST revista
     id ID #REQUIRED
-    tipo_clase (informatica | coches | corazon | investigacion | otras) #REQUIRED
+    tipo_clase (informática | coches | corazon | investigacion | otras) #REQUIRED
     paginas CDATA #REQUIRED>
 <!ELEMENT titulo (#PCDATA)>
-<!ELEMENT numero (#PCDATA)>
+<!ELEMENT numeroRevista (#PCDATA)>
 <!ELEMENT secciones (seccion+)>
 <!ELEMENT seccion (contenido | articulo)>
 <!ATTLIST seccion
     tipo_clase (económica | opinión | deportes | nacional | internacional) 
     paginas CDATA>
-<!ELEMENT contenido EMPTY>
-<!ATTLIST contenido enlace CDATA #REQUIRED>
 <!ELEMENT periodicos (periodico+)>
 <!ELEMENT periodico (indice, secciones)>
 <!ATTLIST periodico
