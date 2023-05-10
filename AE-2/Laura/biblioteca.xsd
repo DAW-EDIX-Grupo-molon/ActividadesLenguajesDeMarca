@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="biblioteca">
+    <complexType>
+      <sequence>
+        <element name="libros">
+          <complexType>
+            <sequence>
+              <element name="libro" maxOccurs="unbounded">
+                <complexType>
+                  <sequence>
+                    <element name="titulo" type="string"/>
+                    <element name="capitulo" maxOccurs="unbounded">
+                      <complexType>
+                        <sequence>
+                          <element name="contenido">
+                            <complexType>
+                              <attribute name="enlace" type="string" use="required"/>
+                            </complexType>
+                          </element>
+                        </sequence>
+                        <attribute name="titulo" type="string" use="required"/>
+                        <attribute name="num_paginas" type="int" use="required"/>
+                      </complexType>
+                    </element>
+                    <element name="indice">
+                      <complexType>
+                        <attribute name="num_paginas" type="int" use="required"/>
+                      </complexType>
+                    </element>
+                    <element name="sinopsis" type="string"/>
+                  </sequence>
+                  <attribute name="id" type="string" use="required"/>
+                  <attribute name="tipo_clase" type="string" use="required"/>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+        <element name="periodicos">
+          <complexType>
+            <sequence>
+              <element name="periodico" maxOccurs="unbounded">
+                <complexType>
+                  <sequence>
+                    <element name="seccion" maxOccurs="unbounded">
+                      <complexType>
+                        <sequence>
+                          <element name="articulo" type="string"/>
+                          <element name="contenido">
+                            <complexType>
+                              <attribute name="enlace" type="string" use="required"/>
+                            </complexType>
+                          </element>
+                        </sequence>
+                        <attribute name="tipo" type="string" use="required"/>
+                      </complexType>
+                    </element>
+                    <element name="indice">
+                      <complexType>
+                        <attribute name="paginas" type="int" use="required"/>
+                      </complexType>
+                    </element>
+                  </sequence>
+                  <attribute name="id" type="string" use="required"/>
+                  <attribute name="tipo_clase" type="string" use="required"/>
+                  <attribute name="fecha_publicacion" type="date" use="required"/>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+        <element name="revistas">
+            <complexType>
+            <sequence>
+                <element name="revista" maxOccurs="unbounded">
+                <complexType>
+                    <sequence>
+                    <element name="titulo" type="string"/>
+                    <element name="indice">
+                        <complexType>
+                        <attribute name="num_paginas" type="integer" use="required"/>
+                        </complexType>
+                    </element>
+                    <element name="secciones">
+                        <complexType>
+                        <sequence>
+                            <element name="seccion" maxOccurs="unbounded">
+                            <complexType>
+                                <sequence>
+                                <element name="contenido">
+                                    <complexType>
+                                    <attribute name="enlace" type="anyURI" use="required"/>
+                                    </complexType>
+                                </element>
+                                </sequence>
+                                <attribute name="tipo" type="string" use="required"/>
+                                <attribute name="num_paginas" type="integer"/>
+                            </complexType>
+                            </element>
+                        </sequence>
+                        </complexType>
+                </element>
+            </sequence>
+                    <attribute name="Id" type="string" use="required"/>
+                    <attribute name="tipo_clase" type="string" use="required"/>
+                    <attribute name="num_revista" type="integer" use="required"/>
+            </complexType>
+        </element>
+        </sequence>
+        </complexType>
+        </element>
+        </sequence>
+    </complexType>
+    </element>
+</schema>
+
+  
