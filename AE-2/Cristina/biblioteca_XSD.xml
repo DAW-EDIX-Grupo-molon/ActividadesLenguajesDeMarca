@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xsi:noNamespaceSchemaLocation= "index.xsd">
+<biblioteca
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="index.xsd">
     <libros>
         <libro id="L1232" tipo_clase="novela" paginas="300">
             <titulo>Amor de media noche</titulo>
