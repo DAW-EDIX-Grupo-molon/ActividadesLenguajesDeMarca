@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="biblioteca">
+        <complexType>
+            <all>
+                <element name="libros">
+                    <complexType>
+                        <choice>
+                            <element name="libro" maxOccurs="unbounded">
+                                <complexType>
+                                    <sequence>
+                                    <element name="titulo" type="string" />
+                                    <element name="indice" type="string" />
+                                    <element name="sipnosis" type="string" />
+                                    <element name="capitulos">
+                                        <complexType>
+                                            <sequence>
+                                                <element name="capitulo" maxOccurs="unbounded">
+                                                    <complexType>
+                                                        <sequence>
+                                                            <element name="titulo" type="string"/>
+                                                            <element name="contenido" />
+                                                        </sequence>
+                                                    <attribute name="paginas" type="integer" use="required"></attribute>
+                                                    </complexType>
+                                                </element>
+                                            </sequence>
+                                        </complexType>
+                                    </element>
+                                    </sequence>
+                                    <attribute name="id" type="string" use="required"></attribute>
+                                    <attribute name="tipo_clase" type="string" use="required"></attribute>
+                                    <attribute name="paginas" type="integer" use="required"></attribute>
+                                </complexType>
+                            </element>
+                        </choice>
+                    </complexType>
+                </element>
+
+                <element name="revistas">
+                    <complexType>
+                        <choice>
+                            <element name="revista">
+                                <complexType>
+                                    <sequence>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </choice>
+                    </complexType>
+                </element>
+
+                <element name="periodicos">
+                    <complexType>
+                        <choice>
+                            <element name="periodico">
+                                <complexType>
+                                    <sequence>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </choice>
+                    </complexType>
+                </element>
+            </all>
+        </complexType>
+    </element>
+    </schema>

@@ -1,4 +1,7 @@
-<biblioteca>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation= "index.xsd">
     <libros>
         <libro id="L1232" tipo_clase="novela" paginas="300">
             <titulo>Amor de media noche</titulo>
@@ -7,15 +10,15 @@
             <capitulos>
                 <capitulo paginas="100">
                     <titulo>Un encuentro inesperado</titulo>
-                    <contenido enlace="enlacecap1" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </capitulo>
                 <capitulo paginas="100">
                     <titulo>Conociendo a un extraño</titulo>
-                    <contenido enlace="enlacecap2" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </capitulo>
                 <capitulo paginas="100">
                     <titulo>Asesinato nocturno</titulo>
-                    <contenido enlace="enlacecap3" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </capitulo>
             </capitulos>
         </libro>
@@ -25,35 +28,35 @@
             <sipnosis>Un gran libro</sipnosis>
             <capitulos>
                 <capitulo paginas="15">
-                    <tiulo>Los 3 cerditos</tiulo>
-                    <contenido enlace="enlacecap1" />
+                    <titulo>Los 3 cerditos</titulo>
+                    <contenido enlace="http://www.abcdatos.com" />
                 </capitulo>
                 <capitulo paginas="15">
-                    <tiulo>Caperucita Roja</tiulo>
-                    <contenido enlace="enlacecap2" />
+                    <titulo>Caperucita Roja</titulo>
+                    <contenido enlace="http://www.abcdatos.com" />
                 </capitulo>
                 <capitulo paginas="20">
-                    <tiulo>Pulgacito</tiulo>
-                    <contenido enlace="enlacecap3" />
+                    <titulo>Pulgacito</titulo>
+                    <contenido enlace="http://www.abcdatos.com" />
                 </capitulo>
             </capitulos>
         </libro>
-        <libro id="L1234" tipo_clase="didáctico" paginas="100">
+        <libro id="L1234" tipo_clase="didactico" paginas="100">
             <titulo>Creando mi primera página Web</titulo>
             <indice>????</indice>
             <sipnosis>Un gran libro</sipnosis>
             <capitulos>
                 <capitulo paginas="33">
-                    <tiulo>Aprendiendo HTML</tiulo>
-                    <contenido enlace="enlacecap1" />
+                    <titulo>Aprendiendo HTML</titulo>
+                    <contenido enlace="http://www.abcdatos.com" />
                 </capitulo>
                 <capitulo paginas="33">
-                    <tiulo>Aprendiendo CSS</tiulo>
-                    <contenido enlace="enlacecap2" />
+                    <titulo>Aprendiendo CSS</titulo>
+                    <contenido enlace="http://www.abcdatos.com" />
                 </capitulo>
                 <capitulo paginas="34">
-                    <tiulo>Aprendiendo JS</tiulo>
-                    <contenido enlace="enlacecap3" />
+                    <titulo>Aprendiendo JS</titulo>
+                    <contenido enlace="http://www.abcdatos.com" />
                 </capitulo>
             </capitulos>
         </libro>
@@ -63,103 +66,103 @@
         <revista id="R159999" tipo_clase="informática" paginas="30">
             <titulo>El OverStackeando el Papel</titulo>
             <numeroRevista>3</numeroRevista>
-            <indiceContenido>????</indiceContenido>
+            <indice>????</indice>
             <secciones>
                 <seccion paginas="9">
-                    <contenido enlace="enlace seccion1" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion2" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion3" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
             </secciones>
         </revista>
         <revista id="R3" tipo_clase="coches" paginas="30">
             <titulo>El corazón de la F1</titulo>
             <numeroRevista>1</numeroRevista>
-            <indiceContenido>?????</indiceContenido>
+            <indice>?????</indice>
             <secciones>
                 <seccion paginas="9">
-                    <contenido enlace="enlace seccion1" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion2" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion3" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
             </secciones>
         </revista>
-        <revista id="R1599" tipo_clase="corazón" paginas="30">
+        <revista id="R1599" tipo_clase="corazon" paginas="30">
             <titulo>Salsa Rosa con Belén Esteban</titulo>
             <numeroRevista>2</numeroRevista>
-            <indiceContenido>????</indiceContenido>
+            <indice>????</indice>
             <secciones>
                 <seccion paginas="9">
-                    <contenido enlace="enlace seccion1" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion2" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion3" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
             </secciones>
         </revista>
-        <revista id="R222222" tipo_clase="investigación" paginas="30">
+        <revista id="R222222" tipo_clase="investigacion" paginas="30">
             <titulo>Universo Espacio</titulo>
             <numeroRevista>4</numeroRevista>
-            <indiceContenido>????</indiceContenido>
+            <indice>????</indice>
             <secciones>
                 <seccion paginas="9">
-                    <contenido enlace="enlace seccion1" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion2" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion3" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
             </secciones>
         </revista>
         <revista id="R13333333" tipo_clase="otras" paginas="30">
             <titulo>Facilícimo, punto de cruz</titulo>
             <numeroRevista>5</numeroRevista>
-            <indiceContenido>????</indiceContenido>
+            <indice>????</indice>
             <secciones>
                 <seccion paginas="9">
-                    <contenido enlace="enlace seccion1" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion2" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
                 <seccion paginas="10">
-                    <contenido enlace="enlace seccion3" />
+                    <contenido enlace="http://www.abcdatos.com" />
                 </seccion>
             </secciones>
         </revista>
     </revistas>
     <periodicos>
-        <periodico id="P1234" tipo_clase="nacional" fechaPublicación="2023/05/11">
-            <índice>?????</índice>
+        <periodico id="P1234" tipo_clase="nacional" fechaPublicacion="2023/05/11">
+            <indice>?????</indice>
             <secciones>
                 <seccion tipo_clase="económica">
-                    <artículo autor="Pepe Lope">
-                        <contenido referencia="refInfo1" />
-                    </artículo>
-                    <artículo autor="Manuel Ruíz">
-                        <contenido referencia="refInfo2" />
-                    </artículo>
+                    <articulo autor="Pepe Lope">
+                        <contenido enlace="http://www.abcdatos.com" />
+                    </articulo>
+                    <articulo autor="Manuel Ruíz">
+                        <contenido enlace="http://www.abcdatos.com" />
+                    </articulo>
                 </seccion>
                 <seccion tipo_clase="opinión">
-                    <artículo autor="María Nieves">
-                        <contenido referencia="refInfo3" />
-                    </artículo>
-                    <artículo autor="Ana Espejo">
-                        <contenido referencia="refInfo4" />
-                    </artículo>
+                    <articulo autor="María Nieves">
+                        <contenido enlace="http://www.abcdatos.com" />
+                    </articulo>
+                    <articulo autor="Ana Espejo">
+                        <contenido enlace="http://www.abcdatos.com" />
+                    </articulo>
                 </seccion>
             </secciones>
         </periodico>
