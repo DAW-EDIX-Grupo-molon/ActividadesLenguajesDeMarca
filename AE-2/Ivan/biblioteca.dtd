@@ -1,4 +1,4 @@
-<!ELEMENT biblioteca (libros+,revistas+,periodicos+)>
+<!ELEMENT biblioteca (libros?,revistas?,periodicos?)>
 
 <!-- Libros -->
 <!ELEMENT libros (libro+)>
