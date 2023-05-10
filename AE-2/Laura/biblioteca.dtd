@@ -1,18 +1,14 @@
-<!DOCTYPE biblioteca [
 <!ELEMENT biblioteca (libros, periodicos, revistas)>
-
 <!ELEMENT libros (libro+)>
 <!ELEMENT libro (titulo, capitulo+, indice, sinopsis)>
-<!ATTLIST libro id ID #REQUIRED
-              tipo_clase CDATA #REQUIRED>
-
+<!ATTLIST libro id ID #REQUIRED tipo_clase CDATA #REQUIRED>
 <!ELEMENT titulo (#PCDATA)>
 <!ELEMENT capitulo (contenido)>
 <!ATTLIST capitulo titulo CDATA #REQUIRED
                   num_paginas CDATA #REQUIRED>
 <!ELEMENT contenido EMPTY>
 <!ATTLIST contenido enlace CDATA #REQUIRED>
-<!ELEMENT indice  EMPTY #REQUIRED>
+<!ELEMENT indice  EMPTY>
 <!ATTLIST indice num_paginas CDATA #REQUIRED>
 <!ELEMENT sinopsis (#PCDATA)>
 
@@ -45,7 +41,4 @@
           num_paginas CDATA #REQUIRED>
 <!ELEMENT articulo (#PCDATA)>
 <!ELEMENT contenido (#PCDATA | enlace)*>
-<!ATTLIST contenido
-          enlace CDATA #REQUIRED>
-
-]>
+<!ATTLIST contenido enlace CDATA #REQUIRED>
