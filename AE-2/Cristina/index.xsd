@@ -9,24 +9,25 @@
                             <element name="libro" maxOccurs="unbounded">
                                 <complexType>
                                     <sequence>
-                                    <element name="titulo" type="string" />
-                                    <element name="indice" type="string" />
-                                    <element name="sipnosis" type="string" />
-                                    <element name="capitulos">
-                                        <complexType>
-                                            <sequence>
-                                                <element name="capitulo" maxOccurs="unbounded">
-                                                    <complexType>
-                                                        <sequence>
-                                                            <element name="titulo" type="string"/>
-                                                            <element name="contenido" />
-                                                        </sequence>
-                                                    <attribute name="paginas" type="integer" use="required"></attribute>
-                                                    </complexType>
-                                                </element>
-                                            </sequence>
-                                        </complexType>
-                                    </element>
+                                        <element name="titulo" type="string" />
+                                        <element name="indice" type="string" />
+                                        <element name="sipnosis" type="string" />
+                                        <element name="capitulos">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="capitulo" maxOccurs="unbounded">
+                                                        <complexType>
+                                                            <sequence>
+                                                                <element name="titulo" type="string" />
+                                                                <element name="contenido" />
+                                                            </sequence>
+                                                            <attribute name="paginas" type="integer"
+                                                                use="required"></attribute>
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                            </complexType>
+                                        </element>
                                     </sequence>
                                     <attribute name="id" type="string" use="required"></attribute>
                                     <attribute name="tipo_clase" type="string" use="required"></attribute>
@@ -40,10 +41,35 @@
                 <element name="revistas">
                     <complexType>
                         <choice>
-                            <element name="revista">
+                            <element name="revista" maxOccurs="unbounded">
                                 <complexType>
                                     <sequence>
+                                        <element name="titulo" type="string" />
+                                        <element name="numeroRevista" type="integer" />
+                                        <element name="indice" type="string" />
+                                        <element name="secciones">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="seccion" maxOccurs="unbounded">
+                                                        <complexType>
+                                                            <sequence>
+                                                                <element name="contenido">
+                                                                    <complexType>
+                                                                        <attribute name="enlace"
+                                                                            type="string" />
+                                                                    </complexType>
+                                                                </element>
+                                                            </sequence>
+                                                            <attribute name="paginas" type="integer" />
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                            </complexType>
+                                        </element>
                                     </sequence>
+                                    <attribute name="id" type="string" use="required"></attribute>
+                                    <attribute name="paginas" type="integer" use="required"></attribute>
+                                    <attribute name="tipo_clase" type="string" use="required"></attribute>
                                 </complexType>
                             </element>
                         </choice>
@@ -53,10 +79,46 @@
                 <element name="periodicos">
                     <complexType>
                         <choice>
-                            <element name="periodico">
+                            <element name="periodico" maxOccurs="unbounded">
                                 <complexType>
                                     <sequence>
+                                        <element name="indice" type="string" />
+                                        <element name="secciones">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="seccion" maxOccurs="unbounded">
+                                                        <complexType>
+                                                            <sequence>
+                                                                <element name="articulo"
+                                                                    maxOccurs="unbounded">
+                                                                    <complexType>
+                                                                        <sequence>
+                                                                            <element
+                                                                                name="contenido">
+                                                                                <complexType>
+                                                                                    <attribute
+                                                                                        name="enlace"
+                                                                                        type="string" />
+                                                                                </complexType>
+                                                                            </element>
+                                                                        </sequence>
+                                                                        <attribute name="autor"
+                                                                            type="string"
+                                                                            use="required"></attribute>
+                                                                    </complexType>
+                                                                </element>
+                                                            </sequence>
+                                                            <attribute name="tipo_clase"
+                                                                type="string" use="required"></attribute>
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                            </complexType>
+                                        </element>
                                     </sequence>
+                                    <attribute name="id" type="string" use="required"></attribute>
+                                    <attribute name="fechaPublicacion" type="date" use="required"></attribute>
+                                    <attribute name="tipo_clase" type="string" use="required"></attribute>
                                 </complexType>
                             </element>
                         </choice>
@@ -65,4 +127,4 @@
             </all>
         </complexType>
     </element>
-    </schema>
+</schema>
