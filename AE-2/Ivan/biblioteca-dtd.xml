@@ -24,7 +24,7 @@
         </libro>
     </libros>
     <revistas>
-        <revista id="r1111" tipo_clase="informática" paginas="50">
+        <revista id="r1111" tipo_clase="informatica" paginas="50">
             <titulo>Rolling Stone</titulo>
             <numero>187</numero>
             <indice/>
@@ -41,7 +41,7 @@
     </revistas>
     <periodicos>
         <periodico id="p1111" tipo_clase="internacionales" fecha_publicacion="07/05/2023">
-            <seccion_p tipo_seccion="opinión">
+            <seccion_p tipo_seccion="opinion">
                 <articulos autor="EMILIA LANDALUCE">
                     <contenido enlace="enlace_art1">art1</contenido>
                 </articulos>

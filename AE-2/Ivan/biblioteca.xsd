@@ -25,21 +25,21 @@
                                                 </restriction>
                                             </simpleType>
                                         </element>
-                                        <element name="título" type="string" minOccurs="1" maxOccurs="1"></element>
-                                        <element name="capítulos" minOccurs="0" maxOccurs="unbounded">
+                                        <element name="titulo" type="string" minOccurs="1" maxOccurs="1"></element>
+                                        <element name="capitulos" minOccurs="0" maxOccurs="unbounded">
                                             <complexType>
                                                 <sequence>
-                                                    <element name="título_capitulo" type="string" maxOccurs="1"></element>
+                                                    <element name="titulo_capitulo" type="string" maxOccurs="1"></element>
                                                     <element name="contenido">
                                                         <complexType>
                                                             <attribute name="enlace" type="string" use="required"></attribute>
                                                         </complexType>
                                                     </element>
                                                 </sequence>
-                                                <attribute name="páginas" type="integer" use="required"></attribute>
+                                                <attribute name="paginas" type="integer" use="required"></attribute>
                                             </complexType>
                                         </element>
-                                        <element name="índice" ></element>
+                                        <element name="indice" ></element>
                                         <element name="sinopsis">
                                             <simpleType>
                                                 <restriction base="string">
@@ -54,7 +54,7 @@
                                                 <restriction base="string">
                                                     <enumeration value="novela"></enumeration>
                                                     <enumeration value="infantil"></enumeration>
-                                                    <enumeration value="didáctico"></enumeration>
+                                                    <enumeration value="didactico"></enumeration>
                                                 </restriction>
                                             </simpleType>
                                     </attribute>
@@ -80,9 +80,9 @@
                                                 </restriction>
                                             </simpleType>
                                         </element>
-                                        <element name="título" type="string" minOccurs="1" maxOccurs="1"></element>
-                                        <element name="número_revista" type="integer" minOccurs="1" maxOccurs="1"></element>
-                                        <element name="índice" minOccurs="0" maxOccurs="unbounded"></element>
+                                        <element name="titulo" type="string" minOccurs="1" maxOccurs="1"></element>
+                                        <element name="numero_revista" type="integer" minOccurs="1" maxOccurs="1"></element>
+                                        <element name="indice" minOccurs="0" maxOccurs="unbounded"></element>
                                         <element name="secciones" minOccurs="0" maxOccurs="unbounded">
                                             <complexType>
                                                 <sequence>
@@ -92,7 +92,7 @@
                                                         </complexType>
                                                     </element>
                                                 </sequence>
-                                                <attribute name="página" type="integer" use="required"></attribute>
+                                                <attribute name="pagina" type="integer" use="required"></attribute>
                                             </complexType>
                                         </element>
                                     </sequence>
@@ -100,10 +100,10 @@
                                     <attribute name="tipo_clase" use="required">
                                             <simpleType>
                                                 <restriction base="string">
-                                                    <enumeration value="informática"></enumeration>
-                                                    <enumeration value="corazón"></enumeration>
+                                                    <enumeration value="informatica"></enumeration>
+                                                    <enumeration value="corazon"></enumeration>
                                                     <enumeration value="coches"></enumeration>
-                                                    <enumeration value="investigación"></enumeration>
+                                                    <enumeration value="investigacion"></enumeration>
                                                     <enumeration value="otras"></enumeration>
                                                 </restriction>
                                             </simpleType>
@@ -130,7 +130,7 @@
                                                 </restriction>
                                             </simpleType>
                                         </element>
-                                        <element name="índice" minOccurs="0" maxOccurs="unbounded"></element>
+                                        <element name="indice" minOccurs="0" maxOccurs="unbounded"></element>
                                         <element name="secciones" minOccurs="0" maxOccurs="unbounded">
                                             <complexType>
                                                 <sequence>
@@ -139,7 +139,7 @@
                                                             <attribute name="enlace" type="string"></attribute>
                                                         </complexType>
                                                     </element>
-                                                    <element name="artículos">
+                                                    <element name="articulos">
                                                         <complexType>
                                                             <sequence>
                                                                 <element name="autor" type="string" minOccurs="1" maxOccurs="unbounded"></element>
@@ -152,11 +152,11 @@
                                                         </complexType>
                                                     </element>
                                                 </sequence>
-                                                <attribute name="tipo_sección" use="required">
+                                                <attribute name="tipo_seccion" use="required">
                                                     <simpleType>
                                                         <restriction base="string">
-                                                            <enumeration value="económica"></enumeration>
-                                                            <enumeration value="opinión"></enumeration>
+                                                            <enumeration value="economica"></enumeration>
+                                                            <enumeration value="opinion"></enumeration>
                                                             <enumeration value="deportes"></enumeration>
                                                             <enumeration value="nacional"></enumeration>
                                                             <enumeration value="internacional"></enumeration>

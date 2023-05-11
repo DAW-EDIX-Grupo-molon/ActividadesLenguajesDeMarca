@@ -31,7 +31,7 @@
 
 <!ELEMENT revista (titulo,numero,indice?,seccion+)>
 <!ATTLIST revista id ID #REQUIRED>
-<!ATTLIST revista tipo_clase (informática|corazón|coches|investigación|otras) #REQUIRED>
+<!ATTLIST revista tipo_clase (informatica|corazon|coches|investigacion|otras) #REQUIRED>
 <!ATTLIST revista paginas CDATA #REQUIRED>
 
 <!ELEMENT numero (#PCDATA)>
