@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema">
     <annotation>
         <documentation> Esquema que marca la estructura de la bilioteca </documentation>
@@ -6,365 +6,183 @@
     <!-- El nodo raíz se llama biblioteca-->
     <element name="biblioteca">
         <complexType>
-            <choice>
+            <sequence>
                 <!-- Utilizamos una opción choice para poder elegir entre los tres tipos de
                 elementos que forman la biblioteca -->
 
                 <!-- Libros -->
-                <element name="Libros">
+                <element name="libros" minOccurs="0" maxOccurs="unbounded">
                     <complexType>
                         <sequence>
-
-                            <element name="calsificación">
+                            <element name="libro" minOccurs="0" maxOccurs="unbounded">
                                 <complexType>
-                                    <choice>
-                                        <element name="nacionales">
+                                    <sequence>
+                                        <!-- elementos de libro -->
+                                        <element name="id">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <pattern value="[L][0-9]{4}"></pattern>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="título" type="string" minOccurs="1" maxOccurs="1"></element>
+                                        <element name="capítulos" minOccurs="0" maxOccurs="unbounded">
                                             <complexType>
-                                                <attribute name="tipo_clase" use="required">
-                                                    <simpleType>
-                                                        <restriction base="string">
-                                                            <pattern value="[p][0-9]{4}"></pattern>
-                                                        </restriction>
-                                                    </simpleType>
-                                                </attribute>
-                                                <attribute name="fecha_publicacion" type="date"
-                                                    use="required"></attribute>
+                                                <sequence>
+                                                    <element name="título_capitulo" type="string" maxOccurs="1"></element>
+                                                    <element name="contenido">
+                                                        <complexType>
+                                                            <attribute name="enlace" type="string" use="required"></attribute>
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                                <attribute name="páginas" type="integer" use="required"></attribute>
                                             </complexType>
                                         </element>
-
-                                        <element name="internacionales">
-                                            <complexType>
-                                                <attribute name="tipo_clase" use="required">
-                                                    <simpleType>
-                                                        <restriction base="string">
-                                                            <pattern value="[p][0-9]{4}"></pattern>
-                                                        </restriction>
-                                                    </simpleType>
-                                                </attribute>
-                                                <attribute name="fecha_publicacion" type="date"
-                                                    use="required"></attribute>
-                                            </complexType>
+                                        <element name="índice" ></element>
+                                        <element name="sinopsis">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <maxLength value="1000"></maxLength>
+                                                </restriction>
+                                            </simpleType>
                                         </element>
-                                    </choice>
-                                </complexType>
-                            </element>
-
-                            <element name="título">
-                                <complexType>
-                                    <attribute name="valor" use="required">
-                                        <simpleType>
-                                            <restriction base="string">
-                                                <maxLength value="50"></maxLength>
-                                            </restriction>
-                                        </simpleType>
+                                    </sequence>
+                                    <!-- atributos de libro -->
+                                    <attribute name="tipo_clase" use="required">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <enumeration value="novela"></enumeration>
+                                                    <enumeration value="infantil"></enumeration>
+                                                    <enumeration value="didáctico"></enumeration>
+                                                </restriction>
+                                            </simpleType>
                                     </attribute>
+                                    <attribute name="paginas" type="integer" use="required"></attribute>
                                 </complexType>
                             </element>
-
-                            <element name="sinopsis">
-                                <complexType>
-                                    <attribute name="valor" use="optional">
-                                        <simpleType>
-                                            <restriction base="string">
-                                                <maxLength value="100"></maxLength>
-                                            </restriction>
-                                        </simpleType>
-                                    </attribute>
-                                </complexType>
-                            </element>
-
-                            <element name="páginas">
-                                <complexType>
-                                    <attribute name="valor" type="integer"
-                                        use="required"></attribute>
-                                </complexType>
-                            </element>
-
-                            <element name="capítulos" maxOccurs="unbounded">
-                                <complexType>
-                                    <attribute name="nombre" use="optional">
-                                        <simpleType>
-                                            <restriction base="string">
-                                                <maxLength value="50"></maxLength>
-                                            </restriction>
-                                        </simpleType>
-                                    </attribute>
-                                    <attribute name="páginas" type="integer"
-                                        use="required"></attribute>
-                                </complexType>
-                            </element>
-
-                            <element name="índice" maxOccurs="unbounded">
-                                <complexType>
-                                    <attribute name="nombre_capitulo" use="optional">
-                                        <simpleType>
-                                            <restriction base="string">
-                                                <maxLength value="50"></maxLength>
-                                            </restriction>
-                                        </simpleType>
-                                    </attribute>
-                                    <attribute name="páginas_capitulo" type="integer"
-                                        use="required"></attribute>
-                                </complexType>
-                            </element>
-
                         </sequence>
                     </complexType>
                 </element>
 
                 <!-- Revistas -->
-                <element name="Revistas">
+                <element name="revistas" minOccurs="0" maxOccurs="unbounded">
                     <complexType>
                         <sequence>
-
-                            <element name="calsificación">
+                            <element name="revista" minOccurs="0" maxOccurs="unbounded">
                                 <complexType>
-                                    <choice>
-                                        <element name="informática">
+                                    <sequence>
+                                        <!-- elementos de revista -->
+                                        <element name="id">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <pattern value="[R][0-9]{4}"></pattern>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="título" type="string" minOccurs="1" maxOccurs="1"></element>
+                                        <element name="número_revista" type="integer" minOccurs="1" maxOccurs="1"></element>
+                                        <element name="índice" minOccurs="0" maxOccurs="unbounded"></element>
+                                        <element name="secciones" minOccurs="0" maxOccurs="unbounded">
                                             <complexType>
-                                                <attribute name="tipo_clase" use="required">
-                                                    <simpleType>
-                                                        <restriction base="string">
-                                                            <pattern value="[r][0-9]{4}"></pattern>
-                                                        </restriction>
-                                                    </simpleType>
-                                                </attribute>
+                                                <sequence>
+                                                    <element name="contenido">
+                                                        <complexType>
+                                                            <attribute name="enlace" type="string" use="required"></attribute>
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                                <attribute name="página" type="integer" use="required"></attribute>
                                             </complexType>
                                         </element>
-
-                                        <element name="corazón">
-                                            <complexType>
-                                                <attribute name="tipo_clase" use="required">
-                                                    <simpleType>
-                                                        <restriction base="string">
-                                                            <pattern value="[r][0-9]{4}"></pattern>
-                                                        </restriction>
-                                                    </simpleType>
-                                                </attribute>
-                                            </complexType>
-                                        </element>
-
-                                        <element name="coches">
-                                            <complexType>
-                                                <attribute name="tipo_clase" use="required">
-                                                    <simpleType>
-                                                        <restriction base="string">
-                                                            <pattern value="[r][0-9]{4}"></pattern>
-                                                        </restriction>
-                                                    </simpleType>
-                                                </attribute>
-                                            </complexType>
-                                        </element>
-
-                                        <element name="investigación">
-                                            <complexType>
-                                                <attribute name="tipo_clase" use="required">
-                                                    <simpleType>
-                                                        <restriction base="string">
-                                                            <pattern value="[r][0-9]{4}"></pattern>
-                                                        </restriction>
-                                                    </simpleType>
-                                                </attribute>
-                                            </complexType>
-                                        </element>
-
-                                        <element name="otras">
-                                            <complexType>
-                                                <attribute name="tipo_clase" use="required">
-                                                    <simpleType>
-                                                        <restriction base="string">
-                                                            <pattern value="[r][0-9]{4}"></pattern>
-                                                        </restriction>
-                                                    </simpleType>
-                                                </attribute>
-                                            </complexType>
-                                        </element>
-
-                                    </choice>
-                                </complexType>
-                            </element>
-
-                            <element name="título">
-                                <complexType>
-                                    <attribute name="valor" use="required">
-                                        <simpleType>
-                                            <restriction base="string">
-                                                <maxLength value="50"></maxLength>
-                                            </restriction>
-                                        </simpleType>
+                                    </sequence>
+                                    <!-- atributos de revista -->
+                                    <attribute name="tipo_clase" use="required">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <enumeration value="informática"></enumeration>
+                                                    <enumeration value="corazón"></enumeration>
+                                                    <enumeration value="coches"></enumeration>
+                                                    <enumeration value="investigación"></enumeration>
+                                                    <enumeration value="otras"></enumeration>
+                                                </restriction>
+                                            </simpleType>
                                     </attribute>
+                                    <attribute name="paginas" type="integer" use="required"></attribute>
                                 </complexType>
                             </element>
-
-                            <element name="número_revistas">
-                                <complexType>
-                                    <attribute name="valor" type="integer"
-                                        use="required"></attribute>
-                                </complexType>
-                            </element>
-
-                            <element name="índice_contenidos" minOccurs="0"
-                                maxOccurs="unbounded">
-                                <complexType>
-                                    <attribute name="nombre" use="optional">
-                                        <simpleType>
-                                            <restriction base="string">
-                                                <maxLength value="50"></maxLength>
-                                            </restriction>
-                                        </simpleType>
-                                    </attribute>
-                                    <attribute name="página" type="integer"
-                                        use="required"></attribute>
-                                </complexType>
-                            </element>
-
-                            <element name="secciones" minOccurs="1"
-                                maxOccurs="unbounded">
-                                <complexType>
-                                    <attribute name="nombre" use="optional">
-                                        <simpleType>
-                                            <restriction base="string">
-                                                <maxLength value="50"></maxLength>
-                                            </restriction>
-                                        </simpleType>
-                                    </attribute>
-                                    <attribute name="páginas" type="integer"
-                                        use="required"></attribute>
-                                </complexType>
-                            </element>
-
                         </sequence>
                     </complexType>
                 </element>
 
                 <!-- Periódicos-->
-                <element name="Perióicos">
+                <element name="Periodicos" minOccurs="0" maxOccurs="unbounded">
                     <complexType>
                         <sequence>
-
-                            <element name="calsificación">
+                            <element name="periodico" minOccurs="0" maxOccurs="unbounded">
                                 <complexType>
-                                    <choice>
-                                        <element name="nacionales">
+                                    <sequence>
+                                        <!-- elementos de periódico -->
+                                        <element name="id">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <pattern value="[P][0-9]{4}"></pattern>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="índice" minOccurs="0" maxOccurs="unbounded"></element>
+                                        <element name="secciones" minOccurs="0" maxOccurs="unbounded">
                                             <complexType>
-                                                <attribute name="tipo_clase" use="required">
+                                                <sequence>
+                                                    <element name="contenido">
+                                                        <complexType>
+                                                            <attribute name="enlace" type="string"></attribute>
+                                                        </complexType>
+                                                    </element>
+                                                    <element name="artículos">
+                                                        <complexType>
+                                                            <sequence>
+                                                                <element name="autor" type="string" minOccurs="1" maxOccurs="unbounded"></element>
+                                                                <element name="contenido">
+                                                                    <complexType>
+                                                                        <attribute name="informacion" type="string" use="required"></attribute>
+                                                                    </complexType>
+                                                                </element>
+                                                            </sequence>
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                                <attribute name="tipo_sección" use="required">
                                                     <simpleType>
                                                         <restriction base="string">
-                                                            <pattern value="[p][0-9]{4}"></pattern>
+                                                            <enumeration value="económica"></enumeration>
+                                                            <enumeration value="opinión"></enumeration>
+                                                            <enumeration value="deportes"></enumeration>
+                                                            <enumeration value="nacional"></enumeration>
+                                                            <enumeration value="internacional"></enumeration>
                                                         </restriction>
                                                     </simpleType>
                                                 </attribute>
-                                                <attribute name="fecha_publicacion" type="date"
-                                                    use="required"></attribute>
                                             </complexType>
                                         </element>
-
-                                        <element name="internacionales">
-                                            <complexType>
-                                                <attribute name="tipo_clase" use="required">
-                                                    <simpleType>
-                                                        <restriction base="string">
-                                                            <pattern value="[p][0-9]{4}"></pattern>
-                                                        </restriction>
-                                                    </simpleType>
-                                                </attribute>
-                                                <attribute name="fecha_publicacion" type="date"
-                                                    use="required"></attribute>
-                                            </complexType>
-                                        </element>
-                                    </choice>
-                                </complexType>
-                            </element>
-
-                            <element name="secciones" minOccurs="1" maxOccurs="unbounded">
-                                <complexType>
-                                    <choice>
-                                        <element name="económica" minOccurs="0">
-                                            <complexType>
-                                                <sequence>
-                                                    <element name="id_artículo">
-                                                        <simpleType>
-                                                            <restriction base="integer">
-                                                                <pattern value="[e][0-9]{4}"></pattern>
-                                                            </restriction>
-                                                        </simpleType>
-                                                    </element>
-                                                    <element name="autor" type="string"
-                                                        minOccurs="0" maxOccurs="unbounded"></element>
-                                                </sequence>
-                                            </complexType>
-                                        </element>
-
-                                        <element name="opinión" minOccurs="0">
-                                            <complexType>
-                                                <sequence>
-                                                    <element name="id_artículo">
-                                                        <simpleType>
-                                                            <restriction base="integer">
-                                                                <pattern value="[o][0-9]{4}"></pattern>
-                                                            </restriction>
-                                                        </simpleType>
-                                                    </element>
-                                                    <element name="autor" type="string"
-                                                        minOccurs="0" maxOccurs="unbounded"></element>
-                                                </sequence>
-                                            </complexType>
-                                        </element>
-
-                                        <element name="nacional" minOccurs="0">
-                                            <complexType>
-                                                <sequence>
-                                                    <element name="id_artículo">
-                                                        <simpleType>
-                                                            <restriction base="integer">
-                                                                <pattern value="[n][0-9]{4}"></pattern>
-                                                            </restriction>
-                                                        </simpleType>
-                                                    </element>
-                                                    <element name="autor" type="string"
-                                                        minOccurs="0" maxOccurs="unbounded"></element>
-                                                </sequence>
-                                            </complexType>
-                                        </element>
-
-                                        <element name="internacional" minOccurs="0">
-                                            <complexType>
-                                                <sequence>
-                                                    <element name="id_artículo">
-                                                        <simpleType>
-                                                            <restriction base="integer">
-                                                                <pattern value="[i][0-9]{4}"></pattern>
-                                                            </restriction>
-                                                        </simpleType>
-                                                    </element>
-                                                    <element name="autor" type="string"
-                                                        minOccurs="0" maxOccurs="unbounded"></element>
-                                                </sequence>
-                                            </complexType>
-                                        </element>
-
-                                    </choice>
-
-                                </complexType>
-                            </element>
-
-                            <element name="índice_contenidos" minOccurs="0" maxOccurs="unbounded">
-                                <complexType>
-                                    <attribute name="nombre_seccion" use="optional">
-                                        <simpleType>
-                                            <restriction base="string">
-                                                <maxLength value="50"></maxLength>
-                                            </restriction>
-                                        </simpleType>
+                                    </sequence>
+                                    <!-- atributos de periódico -->
+                                    <attribute name="tipo_clase" use="required">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <enumeration value="nacionales"></enumeration>
+                                                    <enumeration value="internacionales"></enumeration>
+                                                </restriction>
+                                            </simpleType>
                                     </attribute>
-                                    <attribute name="página" type="integer" use="required"></attribute>
+                                    <attribute name="fecha_publicacion" type="date" use="required"></attribute>
                                 </complexType>
                             </element>
-
                         </sequence>
                     </complexType>
                 </element>
-            </choice>
+
+            </sequence>
         </complexType>
     </element>
 </schema>
