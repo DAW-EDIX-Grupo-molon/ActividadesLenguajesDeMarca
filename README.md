@@ -11,7 +11,7 @@ En concreto las actividades que realizaremos serán las siguientes:
  </p>
 
  - `AE-1`: [Creación de una página web.](https://daw-edix-grupo-molon.github.io/ActividadesLenguajesDeMarca/AE-1/)
- - `AE-2`: XML, DTD y XSD.
+ - `AE-2`: [XML, DTD y XSD.](https://daw-edix-grupo-molon.github.io/ActividadesLenguajesDeMarca/AE-2/)
  - `AE-3`: XSLT y XPATH.
   
   ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
