@@ -40,8 +40,8 @@
     </libros>
 
     <periodicos>
-        <periodico id="P0001">
-            <periodico Id="P1234" tipo_clase="nacional" fecha_publicacion="2023-04-08">
+
+        <periodico id="P1234" tipo_clase="nacional" fecha_publicacion="2023-04-08">
                 <seccion tipo="cronica">
                     <articulo autor="Sergio Lorenzo">El terrible caso del 'sádico de Cáceres'</articulo>
                     <contenido enlace="https://www.hoy.es/extremadura/cronica-negra/terrible-sadico-caceres-20230406080842-nt.html"/>
@@ -53,7 +53,7 @@
                 <indice paginas="1"/>
             </periodico>
 
-            <periodico Id="P2222" tipo_clase="internacional" fecha_publicacion="2023-05-04">
+            <periodico id="P2222" tipo_clase="internacional" fecha_publicacion="2023-05-04">
                 <seccion tipo="opinion">
                     <articulo autor="Damon Winter">In Mississippi, the Governor Has Been So Bad That This Time It Might Be Different</articulo>
                     <contenido enlace="https://www.nytimes.com/international/section/opinion"/>
@@ -64,7 +64,7 @@
                 </seccion>
                 <indice paginas="1"/>
             </periodico>
-        </periodico>
+    
     </periodicos>
 
     <revistas>
