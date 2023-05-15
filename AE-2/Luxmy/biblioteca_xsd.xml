@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="indexLuxmy.xsd">
+    <libros>
+        <libro id="L0001" num_pags="112" tipo_clase="infantil">
+            <titulo>El mundo de Kika: Kika Superbruja</titulo>
+            <capitulos>
+                <capitulo num_pags="13">
+                <titulo>Primer día de Kika</titulo>
+                <contenido URL="https://es.wikipedia.org/wiki/Kika_Superbruja"/>
+                </capitulo>
+            </capitulos>
+            <indice>###</indice>
+            <sinopsis>Este libro cuenta todos los detalles sobre el personaje de Kika Superbruja</sinopsis>
+        </libro>
+        <libro id="L0002" num_pags="192" tipo_clase="novela">
+            <titulo>Los Santos Inocentes</titulo>
+            <capitulos>
+                <capitulo num_pags="27">
+                <titulo>Milana Bonita</titulo>
+                <contenido URL="https://www.planetadelibros.com/libro-los-santos-inocentes/300404"/>
+                </capitulo>
+            </capitulos>
+            <indice>###</indice>
+            <sinopsis>Obra cumbre de la literatura española</sinopsis>
+        </libro>
+        <libro id="L0003" num_pags="500" tipo_clase="didactico">
+            <titulo>Gramática didáctica del Euskera</titulo>
+            <capitulos>
+                <capitulo num_pags="50">
+                <titulo>Introducción</titulo>
+                <contenido URL="https://www.amazon.es/Gramatica-Didactica-Euskera-Ilari-Zubiri/dp/849401840X"/>
+                </capitulo>
+            </capitulos>
+            <indice>###</indice>
+            <sinopsis>Obra de consulta sobre el Euskera y su gramática</sinopsis>
+        </libro>
+    </libros>
+    <revistas>
+        <revista id="R0001" fecha="23042023" num_pags="50" tipo_clase="corazon">
+            <titulo>Hola</titulo>
+            <num_revista>#234</num_revista>
+            <indcontenido>###</indcontenido>
+            <secciones>
+                <seccion num_pags="3">
+                <contenido URL="https://www.hola.com" />
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+    <periodicos>
+        <periodico id="P0001" fecha="22032022" tipo_clase="internacional">
+            <indice>###</indice>
+            <seccion_p tipo_seccion="deportes">
+                <articulos autor="Gary Stonhouse">
+                    <contenido URL="https://www.thesun.co.uk/sport/" />
+                </articulos>
+            </seccion_p>
+        </periodico>
+    </periodicos>
+</biblioteca>
