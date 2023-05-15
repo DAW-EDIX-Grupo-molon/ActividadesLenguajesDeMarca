@@ -42,67 +42,67 @@
     <periodicos>
 
         <periodico id="P1234" tipo_clase="nacional" fecha_publicacion="2023-04-08">
-                <seccion tipo="cronica">
+                <seccionpe tipo="cronica">
                     <articulo autor="Sergio Lorenzo">El terrible caso del 'sádico de Cáceres'</articulo>
-                    <contenido enlace="https://www.hoy.es/extremadura/cronica-negra/terrible-sadico-caceres-20230406080842-nt.html"/>
-                </seccion>
-                <seccion tipo="sucesos">
+                    <contenidop enlace="https://www.hoy.es/extremadura/cronica-negra/terrible-sadico-caceres-20230406080842-nt.html"/>
+                </seccionpe>
+                <seccionpe tipo="sucesos">
                     <articulo autor="R. H.">Roban 9.500 euros a un vecino de Montijo con la estafa 'call spoofing'</articulo>
-                    <contenido enlace="https://www.hoy.es/prov-badajoz/roban-9500-euros-vecino-montijo-estafa-call-20230504130133-nt.html"/>
-                </seccion>
-                <indice paginas="1"/>
+                    <contenidop enlace="https://www.hoy.es/prov-badajoz/roban-9500-euros-vecino-montijo-estafa-call-20230504130133-nt.html"/>
+                </seccionpe>
+                <indicep num_paginas="1"/>
             </periodico>
 
             <periodico id="P2222" tipo_clase="internacional" fecha_publicacion="2023-05-04">
-                <seccion tipo="opinion">
+                <seccionpe tipo="opinion">
                     <articulo autor="Damon Winter">In Mississippi, the Governor Has Been So Bad That This Time It Might Be Different</articulo>
-                    <contenido enlace="https://www.nytimes.com/international/section/opinion"/>
-                </seccion>
-                <seccion tipo="deportes">
+                    <contenidop enlace="https://www.nytimes.com/international/section/opinion"/>
+                </seccionpe>
+                <seccionpe tipo="deportes">
                     <articulo autor="Victor Mather">Knicks vs. Heat: Brawls, Nail-Biters and a Clinging Coach</articulo>
-                    <contenido enlace="https://www.nytimes.com/2023/04/27/sports/basketball/knicks-heat-nba-playoffs.html"/>
-                </seccion>
-                <indice paginas="1"/>
+                    <contenidop enlace="https://www.nytimes.com/2023/04/27/sports/basketball/knicks-heat-nba-playoffs.html"/>
+                </seccionpe>
+                <indicep num_paginas="1"/>
             </periodico>
     
     </periodicos>
 
     <revistas>
-        <revista Id="R1" tipo_clase="informática" num_revista="11">
+        <revista id="R1" tipo_re="informática" num_revista="11">
             <titulo>Revista de informática</titulo>
             <indice num_paginas="1"/>
             <secciones>
                 <seccion tipo="noticias" num_paginas="10">
-                <contenido enlace="https://siliconnews.plataformasinc.es/hardware/"/>
+                <contenidor enlace="https://siliconnews.plataformasinc.es/hardware/"/>
                 </seccion>
                 <seccion tipo="artículos" num_paginas="11">
-                <contenido enlace="https://siliconnews.plataformasinc.es/internet/"/>
+                <contenidor enlace="https://siliconnews.plataformasinc.es/internet/"/>
                 </seccion>
             </secciones>
         </revista>
 
-        <revista Id="R2" tipo_clase="coches" num_revista="05">
+        <revista id="R2" tipo_re="coches" num_revista="05">
             <titulo>Revista de informática</titulo>
             <indice num_paginas="2"/>
             <secciones>
                 <seccion tipo="noticias" num_paginas="5">
-                <contenido enlace="https://revistacar.es/car-store-vehiculos/"/>
+                <contenidor enlace="https://revistacar.es/car-store-vehiculos/"/>
                 </seccion>
                 <seccion tipo="de interés" num_paginas="1">
-                <contenido enlace="https://siliconnews.plataformasinc.es/magzine-pruebs/"/>
+                <contenidor enlace="https://siliconnews.plataformasinc.es/magzine-pruebs/"/>
                 </seccion>
             </secciones>
         </revista>
     
-        <revista Id="R2" tipo_clase="coraazón" num_revista="350">
+        <revista id="R3" tipo_re="coraazón" num_revista="350">
             <titulo>Revista de informática</titulo>
             <indice num_paginas="2"/>
             <secciones>
                 <seccion tipo="moda" num_paginas="16">
-                <contenido enlace="https://hola.com/moda/tendencias/"/>
+                <contenidor enlace="https://hola.com/moda/tendencias/"/>
                 </seccion>
                 <seccion tipo="horoscopo" num_paginas="6">
-                <contenido enlace="https://hola.com/horoscopo/"/>
+                <contenidor enlace="https://hola.com/horoscopo/"/>
                 </seccion>
             </secciones>
         </revista>

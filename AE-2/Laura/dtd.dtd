@@ -15,33 +15,32 @@
 
 <!-- Periodicos -->
 <!ELEMENT periodicos (periodico+)>
-<!ELEMENT periodico (seccion+, indice)>
+<!ELEMENT periodico (seccionpe+, indicep)>
 <!ATTLIST periodico id ID #REQUIRED>
 <!ATTLIST periodico tipo_clase CDATA #REQUIRED>
 <!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
-<!ELEMENT seccion (articulo, contenido)>
-<!ATTLIST seccion tipo CDATA #REQUIRED>
+<!ELEMENT seccionpe (articulo, contenidop)>
+<!ATTLIST seccionpe tipo CDATA #REQUIRED>
 <!ELEMENT articulo (#PCDATA)>
 <!ATTLIST articulo autor CDATA #REQUIRED>
-<!ELEMENT contenido EMPTY>
-<!ATTLIST contenido enlace CDATA #REQUIRED>
-<!ELEMENT indice EMPTY>
-<!ATTLIST indice num_paginas CDATA #REQUIRED>
+<!ELEMENT contenidop EMPTY>
+<!ATTLIST contenidop enlace CDATA #REQUIRED>
+<!ELEMENT indicep  EMPTY>
+<!ATTLIST indicep num_paginas CDATA #REQUIRED>
 
 <!-- Revistas -->
 <!ELEMENT revistas (revista+)>
 <!ELEMENT revista (titulo, indice, secciones)>
 <!ATTLIST revista
           id CDATA #REQUIRED
-          tipo_clase CDATA #REQUIRED
+          tipo_re CDATA #REQUIRED
           num_revista CDATA #REQUIRED>
 <!ELEMENT titulo (#PCDATA)>
 <!ELEMENT indice (#PCDATA)>
 <!ELEMENT secciones (seccion+)>
-<!ELEMENT seccion (articulo, contenido)>
+<!ELEMENT seccion (contenidor)>
 <!ATTLIST seccion
           tipo CDATA #REQUIRED
           num_paginas CDATA #REQUIRED>
-<!ELEMENT articulo (#PCDATA)>
-<!ELEMENT contenido (#PCDATA | enlace)*>
-<!ATTLIST contenido enlace CDATA #REQUIRED>
+<!ELEMENT contenidor (#PCDATA | enlace)*>
+<!ATTLIST contenidor enlace CDATA #REQUIRED>
