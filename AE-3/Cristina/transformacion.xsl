@@ -4,29 +4,52 @@
     <xsl:template match="/">
         <instituto>
             <informacion>
-                <empresa><xsl:value-of select="ite/empresa" /></empresa>
-                <telefono><xsl:value-of select="ite/telefono" /></telefono>
+                <empresa>
+                    <xsl:value-of select="ite/empresa" />
+                </empresa>
+                <telefono>
+                    <xsl:value-of select="ite/telefono" />
+                </telefono>
             </informacion>
             <organigrama>
                 <direccion>
-                    <trabajador cargo="">
-                        <nombre></nombre>
-                        <despacho></despacho>
+                    <trabajador cargo="Director">
+                        <nombre>
+                            <xsl:value-of select="ite/director/nombre" />
+                        </nombre>
+                        <ubicacion>
+                            <xsl:value-of select="ite/director/despacho" />
+                        </ubicacion>
+                    </trabajador>
+                    <trabajador cargo="Jefe de Estudio">
+                        <nombre>
+                            <xsl:value-of select="ite/jefe_estudios/nombre" />
+                        </nombre>
+                        <ubicacion>
+                            <xsl:value-of select="ite/jefe_estudios/despacho" />
+                        </ubicacion>
                     </trabajador>
                 </direccion>
                 <profesorado>
-                    <profesor id="">
-                        <nombre></nombre>
-                        <asignatura></asignatura>
-                    </profesor>
+                    <xsl:for-each select="ite/profesores/profesor">
+                        <profesor id="{id}">
+                            <nombre>
+                                <xsl:value-of select="nombre" />
+                            </nombre>
+                        </profesor>
+                    </xsl:for-each>
                 </profesorado>
             </organigrama>
-            <ciclos>
-                <ciclo grado="" siglas="" año_decreto=""> 
-                    <nombre>
-                    </nombre>
-                </ciclo>
-            </ciclos>
+            <estudios>
+                <xsl:for-each select="ite/ciclos/ciclo">
+                    <formacion_profesional nivel="{grado}" siglas="{@id}"
+                        año_decreto="{decretoTitulo/@año}">
+                        <nombre>
+                            <xsl:value-of select="nombre" />
+                        </nombre>
+                    </formacion_profesional>
+                </xsl:for-each>
+            </estudios>
         </instituto>
 
     </xsl:template>
