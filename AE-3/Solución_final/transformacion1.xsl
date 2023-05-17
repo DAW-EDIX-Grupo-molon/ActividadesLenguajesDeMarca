@@ -5,7 +5,7 @@
             <head>
                 <title><xsl:value-of select="ite/@nombre" /></title>
                 <link rel="icon" type="image/x-icon" href="../Solución_final/img/favicon.ico" />
-                <link rel="stylesheet" href="../Solución_final/main.css" />
+                <link rel="stylesheet" href="main.css" />
             </head>
             <body class="bg-black fullWidth fullHehight displayFlex perfectCenter">
 
@@ -79,9 +79,31 @@
                         </div>
                     </div>
 
+                    <!-- Formulario -->
+                    <div class="mt15">
+                        <span class="txt-bold-color">Formulario de contacto</span>
+                        <form>
+                            <div class="displayFlex fullWidth">
+                                <div class="fullWidth fullHeight">
+                                    <label>Nombre:</label><br/>
+                                    <input type="text" name="nombre" />
+                                </div>
+                                <div class="fullWidth fullHeight">
+                                    <label>E-mail:</label><br/>
+                                    <input type="email" name="email" />
+                                </div>
+                                <div class="fullWidth fullHeight">
+                                    <label>Mensaje:</label><br/>
+                                    <textarea class="fullWidth" name="mensaje"></textarea>
+                                </div>
+                            </div>
+                            <input type="submit" value="Enviar" />
+                        </form>
+                    </div>
+
                     <!-- Footer -->
                     <div class="mt15 displayFlex perfectCenter fullWidth">
-                        <div class=" displayFlex footer">
+                        <div class=" displayFlex fullWidth footer">
                             <div class="fullWidth text-center">
                                 <p><span>EMPRESA:</span></p>
                                 <p><span class="txt-bold"><xsl:value-of select="ite/empresa"/></span></p>
@@ -93,7 +115,7 @@
                             <div class="fullWidth text-center displayFlex perfectCenter flexColumn">
                                 <p><span>Powered by</span></p>
                                 <div class="contendorIMG" style="text-align:center;">
-                                    <img src="../Solución_final/img/UNIR.png" />
+                                    <img src="img/UNIR.png" />
                                 </div>
                             </div>
                         </div>

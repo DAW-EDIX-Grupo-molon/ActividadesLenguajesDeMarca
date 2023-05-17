@@ -57,7 +57,7 @@
 
                         <!-- Ciclos -->
                         <div>
-                            <table class="fullWidth">
+                            <table>
                                 <tr>
                                     <th colspan="3" class="txt-bold-color bg-black text-left">CICLOS</th>
                                 </tr>
@@ -75,6 +75,23 @@
                                 </xsl:for-each>
                             </table>
                         </div>
+                    </div>
+
+                    <!-- Formulario -->
+                    <div>
+                        <h2>Formulario de contacto</h2>
+                        <form>
+                            <label>Nombre:</label><br/>
+                            <input type="text" name="nombre" />
+                            <br />
+                            <label>E-mail:</label><br/>
+                            <input type="email" name="email" />
+                            <br />
+                            <label>Mensaje:</label><br/>
+                            <textarea name="mensaje"></textarea>
+                            <br />
+                            <input type="submit" value="Enviar" />
+                        </form>
                     </div>
 
                     <!-- Footer -->
