@@ -12,9 +12,9 @@ En concreto las actividades que realizaremos serán las siguientes:
 
  - `AE-1`: [Creación de una página web.](https://daw-edix-grupo-molon.github.io/ActividadesLenguajesDeMarca/AE-1/)
  - `AE-2`: [XML, DTD y XSD.](https://daw-edix-grupo-molon.github.io/ActividadesLenguajesDeMarca/AE-2/)
- - `AE-3`: XSLT y XPATH.
+ - `AE-3`: [XSLT y XPATH.](https://daw-edix-grupo-molon.github.io/ActividadesLenguajesDeMarca/AE-3/)
   
-  ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+  ![Badge en Desarollo](https://img.shields.io/badge/STATUS-TERMINADO-RED)
   ![GitHub Org's stars](https://img.shields.io/github/stars/DAW-EDIX-Grupo-molon/ActividadesLenguajesDeMarca?style=social)
 
 
